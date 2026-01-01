@@ -39,3 +39,27 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+.isi-pelatihan ol li a {
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: #008080;        /* Warna hijau tua agar senada dengan gambar Mister Pjg */
+    transition: 0.3s;      /* Efek halus saat kursor menyentuh link */
+}
+
+.isi-pelatihan ol li a:hover {
+    color: #e74c3c;        /* Berubah warna merah saat kursor menempel (hover) */
+    text-decoration: underline; /* Muncul garis bawah saat dipilih */
+    padding-left: 5px;     /* Sedikit efek bergeser saat dipilih */
+}
+
+.isi-pelatihan li {
+    margin-bottom: 12px;
+    font-size: 1.1em;
+}
+.image-container img {
+            /* Ubah persentase di bawah untuk memperkecil/memperbesar gambar */
+            width: 50%;           /* Gambar akan berukuran 50% dari lebar layar */
+            height: auto;         /* Agar proporsi gambar tetap (tidak gepeng) */
+            border-radius: 8px;
+            display: block;       /* Membantu pengaturan posisi */
+            margin: 0 auto;       /* Memastikan gambar tetap di tengah setelah diperkecil */
+        }
