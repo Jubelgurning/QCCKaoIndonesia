@@ -15,11 +15,39 @@
             height: auto;
             border-radius: 8px;
         }
+        /* RUMUS FOTO JEPANG BERSEBELAHAN */
+        .history-images {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .history-images img {
+            width: 45%; 
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
         .highlight-box {
             background-color: #e8f6f3;
             border-left: 5px solid #16a085;
             padding: 15px;
             font-style: italic;
+            margin: 20px 0;
+        }
+        .section-title {
+            margin-top: 30px;
+            background-color: #2c3e50;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 4px;
+        }
+        .sub-section { margin-bottom: 20px; }
+        .conclusion-box {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
             margin: 20px 0;
         }
         .back-button {
@@ -36,7 +64,7 @@
 <body>
 
     <header class="main-header">
-        <h1>Modul Edukasi dan Pelatikan Kao Indonesia</h1>
+        <h1>Modul Edukasi dan Pelatihan Kao Indonesia</h1>
         <div class="sub-header">QC-CIRCLE</div>
     </header>
 
@@ -48,29 +76,25 @@
         </div>
 
         <section>
-           <u> <h3>Pengertian Aktivitas QC-Circle</h3></u>
+            <u><h3>Pengertian Aktivitas QC-Circle</h3></u>
             <div class="highlight-box">
                 “Kelompok kecil yang terdiri dari 4-10 karyawan dalam unit kerja yang sama dan dengan sukarela (voluntarily) dan berkesinambungan melakukan kontrol dan perbaikan terhadap Kualitas dari pekerjaan, produk atau jasa yang dihasilkan”.
             </div>
-
             <p>Kelompok ini bekerja secara:</p>
-            <ul>
-                <li>Mandiri</li>
-                <li>Menggunakan konsep dan teknik Quality Control dan improvement tools lainnya</li>
-                <li>Kreatif</li>
-                <li>Mengembangkan kemampuan diri dan kerja sama tim.</li>
-            </ul>
-            
-    \
+<ul class="rapat">
+    <li>Mandiri</li>
+    <li>Menggunakan konsep dan teknik Quality Control dan improvement tools lainnya</li>
+    <li>Kreatif</li>
+    <li>Mengembangkan kemampuan diri dan kerja sama tim.</li>
+</ul>
+        </section>
 
         <section class="esensi-qcc">
-            <u><h3 class="section-title">Esensi QC-Circle</h3></u>
-            
+            <h3 class="section-title">Esensi QCC</h3>
             <div class="sub-section">
                 <h4>A. Berawal dari area kerja yang sama (the same workshop)</h4>
                 <p>QCC adalah kelompok kecil yang terdiri atas pekerja yang melakukan pekerjaan yang sama dan berada di area kerja yang sama dalam sebuah perusahaan.</p>
             </div>
-
             <div class="sub-section">
                 <h4>B. Aktivitas pengendalian mutu (Quality Control Activities)</h4>
                 <ul>
@@ -78,11 +102,10 @@
                     <li>Mengacu pada siklus pengendalian (spiral through control cycle)</li>
                     <li>Berpandangan “Proses selanjutnya adalah pelanggan kita”</li>
                     <li>Fokus terhadap hal-hal penting</li>
-                    <li>Menginvestigasi penyebab utama dan bertindak mencegah ke-berulangan</li>
+                    <li>Menginvestigasi penyebab utama dan bertindak mencegah keberulangan</li>
                     <li>Berpandangan terhadap proses</li>
                 </ul>
             </div>
-
             <div class="sub-section">
                 <h4>C. Aktivitas sukarela (Voluntary Activities)</h4>
                 <ul>
@@ -94,7 +117,7 @@
         </section>
 
         <section class="objektif-qcc">
-           <u> <h3 class="section-title">Objektif QC-Circle</h3></u>
+            <h3 class="section-title">Objektif QCC</h3>
             <ul>
                 <li>Komunikasi dua arah (mutual communication)</li>
                 <li>Meningkatkan moral karyawan (moral up)</li>
@@ -112,82 +135,73 @@
                 <li>Membuat tempat kerja lebih menyenangkan.</li>
                 <li>Meningkatkan kepuasan konsumen dan berkontribusi terhadap masyarakat.</li>
             </ol>
-        </section>
         </div>
-        <section class="history-section"><h3 class="section-title"><u>Sejarah Lahirnya QC-Circle</u></h3>
-            <p>Diketahui bahwa design kualitas yang bagus atau standard kerja yang bagus tidak selalu menghasilkan produk yang memiliki kualitas bagus juga.</p>
-            <p>Ternyata, pekerja yang berhadapan langsung dengan di mana produk itu dihasilkan memiliki peranan penting terhadap kualitas produk itu sendiri.</p>
-            
-            <p>Sejarah QCC dimulai di Jepang pada tahun 1960-an sebagai respons terhadap persaingan industri, dipelopori oleh raksasa seperti Toyota untuk meningkatkan kualitas dan efisiensi melalui partisipasi karyawan. Ini berkembang menjadi filosofi pengembangan SDM yang mengintegrasikan teknik pemecahan masalah (seperti Diagram Ishikawa dan Control Chart).</p>
+
+        <section class="history-section">
+            <h3 class="section-title">Sejarah Lahirnya QC-Circle</h3>
+            <p>Diketahui bahwa design kualitas yang bagus atau standard kerja yang bagus tidak selalu menghasilkan produk yang memiliki kualitas bagus juga. Pekerja yang berhadapan langsung dengan produk memiliki peranan penting terhadap kualitas produk itu sendiri.</p>
+            <p>Sejarah QCC dimulai di Jepang pada tahun 1960-an sebagai respons terhadap persaingan industri, dipelopori oleh raksasa seperti Toyota.</p>
             
             <div class="history-images">
-                <img src="peta_japan.png" alt="Peta Japan"> <img src="pabrik_japan.png" alt="Pabrik Japan"> </div>
+                <img src="peta_japan.png" alt="Peta Japan"> 
+                <img src="pabrik_japan.png" alt="Pabrik Japan"> 
+            </div>
 
             <h4>Asal-Usul dan Perkembangan Awal</h4>
             <ul>
                 <li><strong>Jepang (1960-an):</strong> Konsep QCC lahir di sektor manufaktur Jepang untuk mengatasi tantangan persaingan global.</li>
-                <li><strong>Peran Industri:</strong> Perusahaan-perusahaan Jepang, termasuk Toyota, mengadopsi QCC sebagai strategi mutu.</li>
-                <li><strong>Tokoh Penting:</strong> Kaoru Ishikawa berperan besar dalam mempopulerkan QCC.</li>
-                <li><strong>Filosofi Dasar:</strong> Berakar pada filosofi <em>people-building</em> (pembangunan manusia), menekankan pemberdayaan pekerja.</li>
+                <li><strong>Tokoh Penting:</strong> Kaoru Ishikawa, ahli pengendalian mutu, berperan besar mempopulerkan QCC.</li>
+                <li><strong>Filosofi Dasar:</strong> Berakar pada filosofi <em>people-building</em> (pembangunan manusia).</li>
             </ul>
-            <section class="detail-sejarah">
-            <p>Konsep QC-Circle (Quality Control Circle) atau Gugus Kendali Mutu (GKM) dikembangkan di Jepang, terutama didorong oleh pengaruh para ahli manajemen kualitas Amerika, <strong>W. Edwards Deming</strong> dan <strong>Joseph M. Juran</strong>, yang memberikan ceramah di sana pada awal 1950-an.</p>
-            
-            <div class="sub-section">
-                <ul>
-                    <li><strong>Penggagas Utama:</strong> Profesor Kaoru Ishikawa dari Universitas Tokyo secara luas diakui sebagai "Bapak QC Circle Jepang".</li>
-                    <li><strong>Tahun Berdiri:</strong> Aktivitas secara resmi dimulai pada <strong>April 1962</strong> di Jepang melalui JUSE (Union of Japanese Scientists and Engineers).</li>
-                    <li><strong>Publikasi:</strong> Diluncurkannya majalah <em>Genba to QC</em> (Tempat Kerja dan QC) sebagai panduan pelatihan bagi mandor dan pekerja.</li>
-                    <li><strong>Konferensi Pertama:</strong> Diadakan pada Mei 1963, menandai pengakuan formal konsep ini di seluruh Jepang.</li>
-                </ul>
-            </div>
+        </section>
 
+        <section class="detail-sejarah">
+            <p>Konsep QCC dikembangkan di Jepang, didorong oleh pengaruh ahli manajemen kualitas Amerika, <strong>W. Edwards Deming</strong> dan <strong>Joseph M. Juran</strong> pada awal 1950-an.</p>
             <h3 class="section-title">Fase Perkembangan</h3>
-            
             <div class="sub-section">
                 <h4>1. Penyebaran di Jepang (1960-an - 1970-an)</h4>
-                <p>Menyebar cepat dari manufaktur hingga jasa. Tujuannya adalah memberdayakan karyawan, meningkatkan kualitas produk, dan meningkatkan moral kerja.</p>
+                <p>Menyebar cepat di seluruh industri, melibatkan jutaan pekerja Jepang untuk memberdayakan karyawan dan meningkatkan moral kerja.</p>
             </div>
-
             <div class="sub-section">
                 <h4>2. Ekspansi Global (1970-an - 1980-an)</h4>
-                <p>Lockheed memperkenalkan QCC di Amerika Serikat (1974). Tahun 1977 dibentuk IAQC untuk memfasilitasi gerakan ini di AS dan Eropa.</p>
+                <p>Lockheed memperkenalkan QCC di AS (1974). Tahun 1977 International Association of Quality Circles (IAQC) dibentuk.</p>
             </div>
-
             <div class="sub-section">
                 <h4>3. Adaptasi dan Evolusi (1990-an - Sekarang)</h4>
-                <p>Prinsip dasarnya berevolusi menjadi metodologi lain seperti <strong>Kaizen, Six Sigma,</strong> dan keterlibatan karyawan secara menyeluruh (Total Quality Management).</p>
+                <p>Prinsip dasarnya berevolusi menjadi metodologi lain seperti <strong>Kaizen, Six Sigma,</strong> dan keterlibatan karyawan serupa.</p>
             </div>
-
             <div class="highlight-box" style="font-style: normal; background-color: #fcf3cf; border-left: 5px solid #f1c40f;">
-                Saat ini, kegiatan QC-Circle tetap menjadi platform strategis di banyak perusahaan untuk mempromosikan efisiensi, inovasi, dan perbaikan berkelanjutan.
-            </div>
-          <h3 class="section-title">Gagasan Dasar dari QCC</h3>
-        <section class="sub-section">
-            <div class="highlight-box" style="background-color: #f8f9fa; border-left: 5px solid #2c3e50; font-style: normal;">
-                <strong>A. Kontribusi terhadap Perusahaan</strong>
-                <p>Tujuan dasar dari aktivitas QCC adalah mengembangkan budaya perusahaan (<em>corporate culture</em>). Tanpa keterlibatan aktif karyawan, perusahaan tidak dapat mengharapkan perbaikan struktur kerja jangka panjang.</p>
-                
-                <strong>B. Menghormati Kemanusiaan (Humanis)</strong>
-                <p>Saling menghargai dan menghormati merupakan persyaratan utama. QCC mengupayakan suasana kerja yang aman, nyaman, dan menerima masukan tanpa membeda-bedakan.</p>
-
-                <strong>C. Mengembangkan Potensi Tersembunyi</strong>
-                <p>QCC menjadi wadah bagi karyawan untuk mengasah keahlian, berpikir kritis, dan memperlihatkan kemampuan terbaik mereka sepenuhnya.</p>
+                Saat ini, kegiatan QC-Circle tetap menjadi platform strategis perusahaan untuk mempromosikan efisiensi dan inovasi.
             </div>
         </section>
 
-        <h3 class="section-title">Dua Efek Pengembangan Manusia</h3>
+        <h3 class="section-title">Gagasan Dasar dari QCC</h3>
+        <section class="sub-section">
+            <div class="highlight-box" style="background-color: #f8f9fa; border-left: 5px solid #2c3e50; font-style: normal;">
+                <strong>A. Kontribusi terhadap Perusahaan</strong>
+                <p>Tujuan utama aktivitas QCC adalah membangun budaya perusahaan yang kuat  (<em>corporate culture</em>). Jika hanya manajemen puncak yang bekerja sendiri, perusahaan tidak akan mampu memperbaiki struktur kerja atau berkembang secara berkelanjutan dalam jangka panjang.</p>
+                <strong>B. Menghormati Kemanusiaan (Humanis)</strong><ul>
+                <p> <li>Sebagian besar pekerja menghabiskan sepertiga waktunya di tempat kerja.</li>
+                <li>Saling menghargai dan menghormati adalah syarat utama dalam pelaksanaan QCC.</li>
+                <li>Terima semua masukan tanpa membeda-bedakan, serta saling belajar.</li>
+                <li>Ciptakan suasana kerja yang aman dan nyaman.</li></p></ul>
+                <strong>C. Mengembangkan Potensi Manusia</strong>
+                <p>Sebagian besar pekerja menghabiskan sepertiga waktunya di tempat kerja. Untuk mengembangkan keahlian mereka, perusahaan perlu menyediakan area pelatihan khusus, di mana karyawan dapat berpikir kreatif dan menunjukkan kemampuan mereka secara maksimal.</p>
+            </div>
+        </section>
+
+        <h3 class="section-title">Dua Efek Pengembangan Manusia </h3>
         <div class="image-container">
             <img src="efekQCC.png" alt="Pengembangan Manusia" style="width: 30%;">
         </div>
         <div class="sub-section" style="display: flex; gap: 20px; flex-wrap: wrap;">
             <div style="flex: 1; min-width: 250px; background: #e8f6f3; padding: 15px; border-radius: 8px;">
                 <strong>1. Pengembangan Diri (Self-development)</strong>
-                <p>Anggota belajar secara proaktif dan mandiri tanpa menunggu instruksi dari atasan.</p>
+                <p>Setiap anggota tim QCC belajar secara mandiri dengan proaktif bertanya, menyelidiki, dan menerapkan hasil pembelajaran dari aktivitas tersebut. Jangan menunggu instruksi atau arahan dari orang lain, ambil inisiatif sendiri.</p>
             </div>
             <div style="flex: 1; min-width: 250px; background: #ebf5fb; padding: 15px; border-radius: 8px;">
                 <strong>2. Pengembangan Timbal-Balik (Mutual-development)</strong>
-                <p>Anggota saling belajar dan berbagi pengetahuan satu sama lain di dalam kelompok.</p>
+                <p>Karena QCC merupakan aktivitas kelompok, setiap anggota tim dapat saling belajar satu sama lain melalui prinsip timbal balik.</p>
             </div>
         </div>
 
@@ -196,55 +210,214 @@
             <img src="keuntunganQCC.png" alt="Keuntungan QCC" style="width: 30%;">
         </div>
         <section class="sub-section">
-            <ul style="columns: 2; -webkit-columns: 2; list-style-position: inside;">
-                <li>Kepemimpinan Ketua meningkat.</li>
-                <li>Moral dan minat kerja naik.</li>
-                <li>Efisiensi dan <em>cost reduction</em>.</li>
-                <li>Peningkatan kualitas kerja.</li>
-                <li>Motivasi menjadi lebih jelas.</li>
-                <li>Hubungan antarmanusia berkembang.</li>
-                <li>Komunikasi atasan-staf membaik.</li>
-                <li>Pemetaan skill lebih terperinci.</li>
-            </ul>
+            <ul style="columns: 21; -webkit-columns: 1; list-style-position: inside;">
+    <li>Kemampuan ketua QCC dalam administrasi dan kepemimpinan meningkat.</li>
+    <li>Anggota tim QCC menjadi lebih tertarik bekerja, sekaligus moral mereka meningkat.</li>
+    <li>Anggota lebih termotivasi untuk memperbaiki kinerja dan mau bekerja dengan baik.</li>
+    <li>Dampak nyata terlihat pada pengurangan biaya (cost reduction), peningkatan efisiensi, dan kualitas.</li>
+    <li>Karyawan yang sebelumnya kurang termotivasi kini memiliki motivasi yang lebih jelas.</li>
+    <li>Hubungan antar individu di tempat kerja semakin berkembang.</li>
+    <li>Atasan dan staf dapat bekerja sama dengan lebih baik.</li>
+    <li>Instruktur lebih memahami kemampuan karyawan secara detail.</li>
+</ul>
         </section>
-
-        <h3 class="section-title">Memulai Aktivitas QCC</h3>
+        <h3 class="section-title">Cara Memulai Aktivitas QCC</h3>
         <div class="image-container">
-            <img src="memulaiQCC.png" alt="Memulai QCC" style="width: 30%;">
+            <img src="memulaiQCC1.png" alt="Memulai QCC" style="width: 30%;">
         </div>
         <section class="sub-section">
             <ol>
-                <li>Pilih kandidat Ketua (Leader) tim.</li>
-                <li>Gelar rapat perdana (<em>kick-off meeting</em>).</li>
-                <li>Diskusi rutin secara periodik.</li>
-                <li>Mulai dari masalah yang mudah.</li>
-                <li>Minta bimbingan Fasilitator atau Atasan.</li>
+                
+ <li>Pilih ketua tim QCC.</li>
+    <li>Mulai dengan rapat bersama seluruh anggota.</li>
+    <li>Lakukan diskusi rutin secara periodik.</li>
+    <li>Awali dengan masalah yang mudah, lalu bertahap ke masalah yang lebih kompleks.</li>
+    <li>Libatkan fasilitator, advisor, promotor, atau atasan di tahap awal.</li>
+    <li>Tingkatkan kemampuan ketua dan anggota QCC.</li>
+
             </ol>
         </section>
-
-        <h3 class="section-title" id="leader-section">Kandidat yang Cocok Menjadi Leader QCC</h3>
-        <div class="image-container">
-            <img src="leaderQCC.png" alt="Leader QCC" style="width: 30%;">
-        </div>
+        <h3 class="section-title" id="leader-section">Kandidat & Karakter Leader QCC</h3>
+          </div>
         <section class="sub-section">
             <div class="conclusion-box" style="border-color: #3498db; background-color: #f0f7ff;">
-                <ul>
-                    <li>Memiliki motivasi yang tinggi.</li>
-                    <li>Paham teknis aktivitas QCC.</li>
-                    <li>Mampu memberikan <em>coaching</em>.</li>
-                    <li>Responsif dan solutif.</li>
-                    <li>Memiliki empati yang besar.</li>
-                </ul>
+                <p>
+<ol>
+    <li>Tindak lanjuti ide dan opini anggota, serta berikan arahan.</li>
+    <li>Pantau implementasi setiap anggota dan berikan arahan.</li>
+    <li>Berperan sebagai koordinator dan inisiator dalam proses, teknologi, dan metode QC.</li>
+    <li>Adakan rapat QCC dan buat ringkasan pencapaian.</li>
+    <li>Jadilah contoh sebagai leader dan dorong munculnya leader berikutnya.</li>
+    <li>Manfaatkan kesempatan berdiskusi dengan fasilitator atau atasan:
+        <ul>
+            <li>Pahami dan setujui kebijakan serta rencana sebelum mengangkat isu.</li>
+            <li>Sampaikan laporan, informasi, dan konsultasi terkait aktivitas.</li>
+            <li>Dapatkan informasi dan jalin kerja sama dengan atasan atau departemen terkait.</li>
+        </ul>
+    </li>
+    <li>Gunakan kesempatan untuk bertukar informasi dengan tim QC-Circle lainnya.</li>
+</0l>
+</p>
             </div>
-        </section>
-
+        <div class="image-container">
+            <img src="leaderQCC.png" alt="Leader QCC" style="width: 30%;">
+      
+        </section> 
         <div class="highlight-box" style="background-color: #fdedec; border-left: 5px solid #e74c3c;">
-            <strong>Prinsip Leader:</strong> Berorientasi target, berani eksekusi, dipercaya anggota, sportif, objektif, dan selalu ingin mengembangkan diri.
+            <strong>Kepemimpinan adalah:
+</strong><br> 
+<ol>
+    <li>Berorientasi pada target.</li>
+    <li>Memiliki kemampuan eksekusi.</li>
+    <li>Dapat dipercaya oleh semua anggota.</li>
+    <li>Memotivasi tim untuk bekerja secara sukarela.</li>
+    <li>Menggali seluruh potensi dan kemampuan anggota.</li>
+</ol>
+      <strong>Leader QCC seharusnya:
+</strong><br> 
+<ol>
+    <li>Bekerja sepenuh hati secara sukarela.</li>
+    <li>Selalu melihat dari sudut pandang orang lain dan berdiskusi.</li>
+    <li>Bertindak berani tanpa rasa takut.</li>
+    <li>Memahami dan memanfaatkan keahlian serta keuntungan personal anggota.</li>
+    <li>Mempertimbangkan hubungan antar sesama.</li>
+    <li>Responsif terhadap permintaan yang diterima.</li>
+    <li>Sportif, adil, dan mengevaluasi secara objektif.</li>
+    <li>Menetapkan tujuan QC-Circle dengan jelas dan menjalankannya sesuai rencana.</li>
+    <li>Selalu belajar dan berusaha mengembangkan diri.</li>
+    <li>Membuat laporan, memberikan informasi, dan berkonsultasi dengan fasilitator atau atasan.</li>
+</ol> </div>
+ </section>
+        <h3 class="section-title">Anggota QCC dan Fungsinya</h3>
+        <div class="image-container">
+            <img src="anggotaQCC.png" alt="Anggota QCC" style="width: 30%;">
         </div>
+        <section class="sub-section">
+     <strong>Fungsi Anggota/Member QCC:
+</strong><br> 
+<ol>
+    <li>Berpartisipasi aktif dalam aktivitas QCC, mengambil tanggung jawab, dan memberikan kontribusi.</li>
+    <li>Selalu hadir dalam rapat QCC dan aktif memberi saran serta komentar.</li>
+    <li>Bekerja sama dengan leader untuk menciptakan harmonisasi dalam tim.</li>
+    <li>Belajar secara sukarela tentang perubahan proses bisnis, teknologi, dan metode QC, serta mengembangkan diri.</li>
+    <li>Membuat presentasi ketika masalah berhasil dipecahkan.</li>
+</ol>
+    <strong>Syarat Anggota/Member QCC:</strong><br> 
+<ol>
+    <li>Menghadapi dan menangani masalah atau tema yang diangkat.</li>
+    <li>Memiliki kemauan kuat untuk maju dan terus belajar.</li>
+    <li>Memberikan yang terbaik kepada organisasi secara sukarela.</li>
+    <li>Mau dan mampu bekerja sama dalam tim.</li>
+</ol>
+</section>
+        <h3 class="section-title">Rapat / Meeting QCC</h3>
+      
+Rapat /meeting QCC adalah forum di mana anggota berkumpul dari kesibukan masing-masing untuk memeriksa kemajuan dan mempelajari prosedur sesuai aktivitas QCC. Rapat QCC menjadi penggerak utama berjalannya aktivitas QCC.<br><br>
+    <strong>Tujuan rapat/meeting QCC:</strong>
+<ul>
+    <li>Bertukar pendapat antar anggota QCC untuk menyatukan tujuan.</li>
+    <li>Menetapkan dan memeriksa fungsi yang diperlukan.</li>
+    <li>Menggabungkan pemikiran dan kebijaksanaan dari semua anggota.</li>
+    <li>Mempererat pemahaman dan komunikasi antar anggota.</li>
+    <li>Memperkuat kepemimpinan QCC Leader.</li>
+    <li>Meningkatkan pengembangan diri dan kerja sama antar anggota.</li>
+</ul>
+   <strong>Jenis atau bentuk rapat/meeting QCC:</strong>
+
+<ol>
+    <li>Rapat berkala (rutin)
+        <ul>
+            <li>Rapat yang sudah terjadwal.</li>
+        </ul>
+    </li>
+    <li>Rapat kecil
+        <ul>
+            <li>Rapat awal/akhir shift (10 menit sebelum dan sesudah kerja).</li>
+            <li>Rapat mini (berdasarkan kebutuhan anggota tertentu).</li>
+            <li>Rapat 5 menit (di tempat dan waktu kasus terjadi).</li>
+            <li>Rapat saat makan siang (meeting di tempat makan siang).</li>
+        </ul>
+    </li>
+    <li>Rapat untuk bertukar informasi
+        <ul>
+            <li>Melalui memo, mading, atau dokumen.</li>
+        </ul>
+    </li>
+    <li>Rapat via email atau WhatsApp.</li>
+    <li>Rapat di luar kantor
+        <ul>
+            <li>Sesi mancing, olah raga atau rekreasi, bagus untuk membangun kerja sama.</li>
+        </ul>
+    </li>
+</ol>
+  <strong>Bagaimana memanfaatkan waktu untuk Rapat QCC:</strong>
+
+<ul>
+    <li>Rapat QCC adalah penggerak utama aktivitas QC-Circle.</li>
+    <li>Ada dua jenis rapat:
+        <ul>
+            <li><strong>Small Meeting (rapat kecil):</strong> Dilakukan lebih sering, cepat, dan fokus pada masalah spesifik.
+                <ul>
+                    <li>Memeriksa apa yang sudah dilakukan dan apa yang harus dilakukan.</li>
+                    <li>Menetapkan keputusan dengan jelas.</li>
+                    <li>Melaksanakan keputusan yang sudah dibuat.</li>
+                </ul>
+            </li>
+            <li><strong>Regular Meeting (rapat berkala):</strong> Dilakukan sesuai jadwal untuk mengevaluasi hasil dan merencanakan langkah berikutnya.
+                <ul>
+                    <li>Mengevaluasi hasil implementasi.</li>
+                    <li>Menetapkan prosedur untuk langkah berikutnya.</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Rapat QCC harus dilakukan secara terstruktur: rapat kecil untuk masalah cepat, rapat berkala untuk evaluasi.</li>
+    <li>Setiap rapat harus menghasilkan keputusan yang jelas dan dilaksanakan.</li>
+    <li>Jika keputusan tidak dijalankan, QC-Circle akan menjadi “circle tidur” (tidak aktif).</li>
+    <li>Aktivitas di luar rapat juga penting: peran individu dan kerja sama antar anggota harus berjalan.</li>
+</ul>
+<div> class="image-container">
+            <img src="wakturapatQCC.png" alt="Anggota QCC" style="width: 100%;">
+        <div class="highlight-box" style="background-color: #fdedec; border-left: 5px solid #e74c3c;">
+      
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapat QCC: Brainstorming Ide dan Gagasan</title>
+</head>
+<body>
+    <h1>Rapat QCC: Brainstorming Ide dan Gagasan</h1>
+
+    <h2>Definisi Brainstorming</h2>
+    <p>
+        Brainstorming adalah metode untuk mengumpulkan pendapat dengan melibatkan partisipasi semua peserta. 
+        Tujuannya adalah mendapatkan sebanyak mungkin masukan dan ide terbaik melalui sumbang saran.
+    </p>
+
+    <h2>Prinsip Sumbang Saran</h2>
+    <ol>
+        <li>Jangan melarang orang untuk berbicara.</li>
+        <li>Jangan mengkritik pendapat orang lain.</li>
+        <li>Semakin banyak pendapat, semakin baik hasil akhirnya.</li>
+        <li>Ambil manfaat dari ide orang lain.</li>
+    </ol>
+
+    <h2>Metode Brainstorming</h2>
+    <ol>
+        <li>Pengumpulan ide dilakukan secara bergiliran.</li>
+        <li>Setiap orang menyampaikan ide satu per satu.</li>
+        <li>Ide baru disampaikan setelah giliran tiba.</li>
+        <li>Jika belum ada ide, cukup katakan “pass”.</li>
+        <li>Selama proses berlangsung, jangan memberi komentar atau mengkritik ide yang masuk.</li>
+        <li>Semua ide yang disampaikan harus dicatat.</li>
+    </ol>
+</body>
+</html>
+</div>
         </section>
         <a href="index.html" class="back-button">⬅ Kembali ke Daftar Isi</a>
-        
     </main>
-
 </body>
 </html>
