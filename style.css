@@ -55,6 +55,7 @@ body {
     margin-bottom: 12px;
     font-size: 1.1em;
 }
+
 .image-container img {
             /* Ubah persentase di bawah untuk memperkecil/memperbesar gambar */
             width: 50%;           /* Gambar akan berukuran 50% dari lebar layar */
@@ -62,4 +63,20 @@ body {
             border-radius: 8px;
             display: block;       /* Membantu pengaturan posisi */
             margin: 0 auto;       /* Memastikan gambar tetap di tengah setelah diperkecil */
+        }.history-images {
+            display: flex;
+            justify-content: center; /* Foto di tengah */
+            gap: 15px;              /* Jarak antar foto */
+            margin: 20px 0;
         }
+
+        .history-images img {
+            width: 150px;           /* Ukuran foto dibuat kecil (150 pixel) */
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+
+       
+        
