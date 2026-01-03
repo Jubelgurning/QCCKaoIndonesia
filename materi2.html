@@ -5,6 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>7QC Tools - Module Training QCC</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Gaya untuk bagian pembahasan di bawah */
+        .materi-section {
+            margin-top: 40px;
+            padding: 20px;
+            border-top: 3px solid #0056b3;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+
+        /* Rumus memperbesar gambar khusus di bagian materi */
+        .img-large {
+            width: 100%;
+            max-width: 850px; /* Ukuran gambar diperbesar di sini */
+            height: auto;
+            display: block;
+            margin: 20px 0;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .btn-link {
+            display: inline-block;
+            margin: 15px 0;
+            color: #0056b3;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
 
@@ -19,62 +49,270 @@
             <p>7QC Tools adalah sekumpulan alat statistik sederhana yang digunakan untuk menganalisis data, mengidentifikasi akar masalah, dan mengontrol kualitas proses produksi.</p>
         </section><br>
 
-        <table class="qcc-table">
-    <thead>
-        <tr>
-            <th>No</th>
-            <th>Alat (Tools)</th>
-            <th>Fungsi Utama</th>
-            <th>Contoh Visual</th>
-        </tr>
-    </thead>
-    <tbody>
-  <tr>
-            <td>1</td>
-            <td><strong>DIAGRAM PARETO</strong></td>
-            <td>Menentukan prioritas masalah (Prinsip 80/20).</td>
-            <td><img src="DIAGRAM PARETO.png" alt="Diagram Pareto" class="img-tool"></td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td><strong>CAUSE EFFECT DIAGRAM</strong></td>
-            <td>Mencari akar penyebab masalah (Fishbone).</td>
-            <td><img src="fishbone.png" alt="Cause Effect Diagram" class="img-tool"></td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td><strong>GRAPH</strong></td>
-            <td>Memvisualisasikan tren data.</td>
-            <td><img src="grafikbatang.png" alt="Graph" class="img-tool"></td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td><strong>CHECK SHEET</strong></td>
-            <td>Mengumpulkan data secara sistematis.</td>
-            <td><img src="checksheet.png" alt="Check Sheet" class="img-tool"></td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td><strong>HISTOGRAM</strong></td>
-            <td>Melihat distribusi/penyebaran data.</td>
-            <td><img src="histogram.png" alt="Histogram" class="img-tool"></td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td><strong>SCATTER DIAGRAM</strong></td>
-            <td>Melihat hubungan antara dua variabel.</td>
-            <td><img src="scatter.png" alt="Scatter Diagram" class="img-tool"></td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td><strong>CONTROL CHART</strong></td>
-            <td>Memantau stabilitas proses.</td>
-           <td><img src="controlchart.png" alt="Control Chart" class="img-tool"></td>
-        </tr>
-    </tbody>
-</table>
+        <table class="qcc-table" id="tabel-utama">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Alat (Tools)</th>
+                    <th>Fungsi Utama</th>
+                    <th>Contoh Visual</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><a href="#pembahasan-pareto"><strong>DIAGRAM PARETO</strong></a></td>
+                    <td>Menentukan prioritas masalah (Prinsip 80/20).</td>
+                    <td><img src="DIAGRAM PARETO.png" alt="Diagram Pareto" class="img-tool"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="#pembahasan-cause-effect"><strong>CAUSE EFFECT DIAGRAM</strong></a></td>
+                    <td>Mencari akar penyebab masalah (Fishbone).</td>
+                    <td><img src="fishbone.png" alt="Cause Effect Diagram" class="img-tool"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="#pembahasan-graph"><strong>GRAPH</strong></a></td>
+                    <td>Memvisualisasikan tren data.</td>
+                    <td><img src="grafikbatang.png" alt="Graph" class="img-tool"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a href="#pembahasan-check-sheet"><strong>CHECK SHEET</strong></a></td>
+                    <td>Mengumpulkan data secara sistematis.</td>
+                    <td><img src="checksheet.png" alt="Check Sheet" class="img-tool"></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><a href="#pembahasan-histogram"><strong>HISTOGRAM</strong></a></td>
+                    <td>Melihat distribusi/penyebaran data.</td>
+                    <td><img src="histogram.png" alt="Histogram" class="img-tool"></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><a href="#pembahasan-scatter"><strong>SCATTER DIAGRAM</strong></a></td>
+                    <td>Melihat hubungan antara dua variabel.</td>
+                    <td><img src="scatter.png" alt="Scatter Diagram" class="img-tool"></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><a href="#pembahasan-control-chart"><strong>CONTROL CHART</strong></a></td>
+                    <td>Memantau stabilitas proses.</td>
+                    <td><img src="controlchart.png" alt="Control Chart" class="img-tool"></td>
+                </tr>
+            </tbody>
+        </table>
 
-        <footer class="navigation">
+        <hr>
+
+        <section id="pembahasan-pareto" class="materi-section">
+            <h3>Materi Detail: Diagram Pareto</h3>
+            
+            <img src="contoh pareto.png" alt="Contoh Diagram Pareto" class="img-large">
+            
+
+            <p>Diagram Pareto adalah alat visual (grafik batang dan garis) yang digunakan untuk mengidentifikasi dan memprioritaskan masalah atau penyebab paling signifikan dengan mengurutkan data dari frekuensi tertinggi ke terendah, berdasarkan Prinsip Pareto (aturan 80/20) bahwa sebagian kecil penyebab (20%) menghasilkan sebagian besar masalah (80%), sehingga membantu tim fokus pada solusi paling efektif untuk peningkatan kualitas.</p>
+            
+            <h4>Fungsi Utama Diagram Pareto:</h4>
+            <ul>
+                <li><strong>Identifikasi Prioritas:</strong> Menunjukkan masalah mana yang paling sering terjadi atau berdampak besar untuk diselesaikan terlebih dahulu.</li>
+                <li><strong>Fokus Efisien:</strong> Membantu tim mengalokasikan sumber daya untuk mengatasi penyebab utama, bukan semua masalah kecil.</li>
+                <li><strong>Visualisasi Data:</strong> Menggabungkan grafik batang (frekuensi) dan garis (kumulatif) untuk menunjukkan dampak gabungan dari masalah.</li>
+            </ul>
+
+            <h4>Cara Kerjanya:</h4>
+            <ol>
+                <li><strong>Kumpulkan Data:</strong> Catat data tentang berbagai masalah atau cacat (misalnya, jenis kesalahan, keluhan pelanggan).</li>
+                <li><strong>Susun Urutan:</strong> Urutkan data dari yang paling sering terjadi (tertinggi) ke yang paling jarang (terendah).</li>
+                <li><strong>Buat Grafik:</strong>
+                    <ul>
+                        <li><em>Batang:</em> Sumbu X menunjukkan kategori masalah, sumbu Y kiri menunjukkan frekuensi/biaya, batang diurutkan menurun.</li>
+                        <li><em>Garis:</em> Sumbu Y kanan menunjukkan persentase kumulatif, garis menunjukkan total kumulatif dari batang.</li>
+                    </ul>
+                </li>
+                <li><strong>Analisis:</strong> Temukan titik di mana 80% masalah tercakup (di bawah garis 80%) untuk menentukan "vital few" (penyebab vital) yang perlu ditangani.</li>
+            </ol>
+            
+            <a href="#tabel-utama" class="btn-link">&uarr; Kembali ke Tabel Utama</a>
+        </section>
+
+        <section id="pembahasan-cause-effect" class="materi-section">
+            <h3>Materi Detail: CAUSE AND EFFECT DIAGRAM (FISHBONE)</h3>
+            
+            <img src="fishbone.png" alt="Contoh Cause and Effect Diagram" class="img-large">
+            
+
+            <p>Diagram sebab akibat (Cause-and-Effect Diagram atau Diagram Tulang Ikan/Ishikawa) digunakan untuk mengidentifikasi, menganalisis, dan mengorganisasi penyebab potensial dari suatu masalah atau efek tertentu secara visual dan sistematis, membantu tim dalam brainstorming akar penyebab, mencari solusi, dan mendorong perbaikan berkelanjutan.</p>
+            
+            <h4>Fungsi Utama:</h4>
+            <ul>
+                <li><strong>Identifikasi Akar Penyebab (Root Cause Analysis):</strong> Membantu menemukan akar masalah, bukan hanya gejala, dengan mengkategorikan penyebab potensial seperti manusia, mesin, metode, material, pengukuran, dan lingkungan (6M).</li>
+                <li><strong>Visualisasi Masalah:</strong> Menampilkan hubungan sebab-akibat secara grafis menyerupai tulang ikan, memudahkan pemahaman masalah secara menyeluruh.</li>
+                <li><strong>Pemecahan Masalah (Problem Solving):</strong> Menjadi alat dasar dalam tim untuk memecahkan masalah, mengumpulkan ide, dan memprioritaskan penyebab untuk investigasi lebih lanjut.</li>
+                <li><strong>Peningkatan Kualitas:</strong> Banyak digunakan dalam metodologi seperti Six Sigma untuk mencegah masalah terulang dengan mengatasi akar penyebabnya.</li>
+            </ul>
+
+            <h4>Digunakan Untuk:</h4>
+            <ul>
+                <li>Menganalisis masalah kualitas produk/layanan.</li>
+                <li>Memahami keterlambatan atau kegagalan dalam proses.</li>
+                <li>Meningkatkan efisiensi operasional di berbagai industri (manufaktur, kesehatan, dll.).</li>
+            </ul>
+            <a href="#tabel-utama" class="btn-link">&uarr; Kembali ke Tabel Utama</a>
+        </section>
+
+        <section id="pembahasan-graph" class="materi-section">
+            <h3>Materi Detail: GRAPH (Grafik)</h3>
+            
+            <img src="contoh graph.png" alt="Contoh Grafik QCC" class="img-large">
+            
+
+            <p>Grafik dalam Quality Control Circle (QCC) digunakan sebagai alat visual untuk menganalisis, memantau, dan mengomunikasikan data yang berhubungan dengan kualitas. Tujuannya adalah untuk membantu tim QCC dalam mengidentifikasi masalah, memahami penyebabnya, dan mengukur efektivitas solusi yang diterapkan.</p>
+            
+            <h4>Beberapa Kegunaan Spesifik Grafik dalam QCC meliputi:</h4>
+            <ul>
+                <li><strong>Identifikasi Masalah:</strong> Grafik seperti diagram pareto membantu mengidentifikasi masalah yang paling signifikan dengan memprioritaskan frekuensi kejadiannya.</li>
+                <li><strong>Analisis Proses:</strong> Grafik kendali (control charts) digunakan untuk memantau stabilitas proses dari waktu ke waktu dan mendeteksi adanya variasi yang tidak wajar.</li>
+                <li><strong>Menemukan Akar Masalah:</strong> Diagram sebab-akibat (fishbone diagram) sering digunakan bersama alat visual lainnya untuk mengorganisir potensi penyebab masalah secara sistematis.</li>
+                <li><strong>Pengambilan Keputusan:</strong> Data yang divisualisasikan membantu tim dalam mengambil keputusan yang berbasis fakta (data-driven decisions) daripada sekadar asumsi.</li>
+                <li><strong>Presentasi Hasil:</strong> Grafik memudahkan komunikasi hasil analisis, perkembangan proyek, dan pencapaian yang diperoleh tim QCC kepada manajemen atau pihak terkait lainnya.</li>
+            </ul>
+<a href="#tabel-utama" class="btn-link">&uarr; Kembali ke Tabel Utama</a>
+        </section>
+            <section id="pembahasan-check-sheet" class="materi-section">
+            <h3>Materi Detail: CHECK SHEET (Lembar Periksa)</h3>
+            
+            <img src="contoh shecksheet.png" alt="Contoh Check Sheet" class="img-large">
+            <p>Check Sheet (Lembar Periksa) adalah lembar/formulir yang dirancang untuk mengumpulkan data yang berfungsi sebagai metode sederhana dan sistematis untuk mengumpulkan data, mencatat frekuensi masalah atau cacat, dan mengidentifikasi pola awal secara terstruktur, sering kali menggunakan tanda centang (✓) pada format tabel untuk mempermudah analisis data awal sebelum diolah lebih lanjut menjadi histogram atau diagram lain.</p> 
+            <h4>Fungsi Utama Check Sheet dalam 7 QC Tools:</h4>
+            <ul>
+                <li><strong>Pengumpulan Data Sistematis:</strong> Mencatat kejadian atau data yang relevan secara berulang di lokasi kejadian (misalnya, frekuensi produk cacat, lokasi cacat).</li>
+                <li><strong>Identifikasi Pola & Frekuensi:</strong> Membantu melihat pola kemunculan masalah atau jenis cacat dengan mudah, seperti berapa kali suatu masalah terjadi.</li>
+                <li><strong>Dasar Analisis Selanjutnya:</strong> Data yang terkumpul menjadi input penting untuk alat QC lain seperti Histogram, Pareto Chart, dan Fishbone Diagram.</li>
+                <li><strong>Monitoring Proses:</strong> Digunakan untuk memantau parameter proses atau kepatuhan terhadap standar secara berkala.</li>
+            </ul>
+            <h4>Contoh Penggunaan & Fungsi:</h4>
+            <ul>
+                <li><strong>Process Distribution Check Sheet:</strong> Mencatat distribusi data proses (misalnya, panjang produk).</li>
+                <li><strong>Defective Item Check Sheet:</strong> Mencatat jenis cacat yang sering muncul (misalnya, sobek, kotor, penyok).</li>
+                <li><strong>Defect Location Check Sheet:</strong> Mencatat lokasi di mana cacat terjadi pada produk (misalnya, bagian atas, samping, bawah).</li>
+                <li><strong>Defective Cause Check Sheet:</strong> Mencatat penyebab cacat (misalnya, mesin, material, operator).</li>
+            </ul>
+            <h4>Cara Membuat Check Sheet:</h4>
+            <ol>
+                <li>Tentukan apa yang akan diamati/dicatat (jenis masalah, lokasi, penyebab).</li>
+                <li>Tentukan kapan dan berapa lama data akan dikumpulkan.</li>
+                <li>Rancang format lembar dengan kolom kategori dan baris kejadian, gunakan tanda centang (✓) saat data muncul.</li>
+                <li>Tambahkan etiket pada setiap bagian formulir.</li>
+                <li>Rekam data setiap kali kejadian terjadi.</li>
+            </ol>  
+            <a href="#tabel-utama" class="btn-link">&uarr; Kembali ke Tabel Utama</a>
+        </section>
+
+<section id="pembahasan-histogram" class="materi-section">
+            <h3>Materi Detail: HISTOGRAM</h3>
+            
+            <img src="histogram.png" alt="Contoh Histogram" class="img-large">
+              <img src="contoh histogram.png" alt="Contoh Histogram" class="img-large">
+
+            <p>Histogram dalam 7 QC Tools digunakan untuk memvisualisasikan distribusi frekuensi data secara grafis guna memahami pola sebaran data, mengidentifikasi variasi (apakah merata atau tidak), menemukan anomali/pencilan (outlier), dan membantu menentukan apakah suatu proses stabil atau tidak, sehingga menjadi dasar untuk analisis lebih lanjut atau perbaikan kualitas.</p>
+            
+            <h4>Tujuan dan Fungsi Histogram:</h4>
+            <ul>
+                <li><strong>Memvisualisasikan Distribusi Data:</strong> Menampilkan bentuk sebaran data (seperti distribusi normal atau miring) dalam bentuk batang vertikal.</li>
+                <li><strong>Memahami Kinerja Proses:</strong> Mendeteksi apakah proses bisnis konsisten atau fluktuatif.</li>
+                <li><strong>Mengidentifikasi Outlier (Pencilan):</strong> Menemukan nilai ekstrem yang berada di luar pola utama.</li>
+                <li><strong>Menganalisis Variasi:</strong> Menunjukkan tingkat variabilitas atau lebar sebaran data dalam proses.</li>
+                <li><strong>Dasar Analisis Lanjutan:</strong> Menjadi input untuk alat QC lain seperti Diagram Pareto atau Fishbone.</li>
+            </ul>
+
+            <h4>Contoh Penggunaan:</h4>
+            <blockquote>
+                Jika ada keluhan makanan terlambat, tim mengumpulkan data waktu tunggu (Check Sheet). Histogram dibuat untuk melihat seberapa sering keterlambatan terjadi dalam rentang waktu tertentu (misal: 0-5 menit, 5-10 menit, dll.). Jika pola paling banyak di 10-15 menit, tim bisa fokus mencari penyebab di rentang tersebut.
+            </blockquote>
+
+            <h4>Cara Membuat Histogram (Langkah Manual):</h4>
+            <ol>
+                <li><strong>Kumpulkan Data Numerik:</strong> Misal data tinggi badan atau nilai ujian.</li>
+                <li><strong>Tentukan Interval (Kelas):</strong> Bagi rentang data menjadi interval yang sama lebarnya (misal: 10-19, 20-29).</li>
+                <li><strong>Buat Tabel Frekuensi:</strong> Hitung berapa banyak data yang masuk di setiap interval.</li>
+                <li><strong>Gambar Sumbu:</strong> Sumbu X untuk interval data, sumbu Y untuk frekuensi.</li>
+                <li><strong>Gambarkan Batang:</strong> Buat batang yang saling menempel satu sama lain sesuai frekuensi tiap interval.</li>
+            </ol>
+
+            <h4>Cara Digital (Excel/Google Sheets):</h4>
+            <ul>
+                <li><strong>Masukkan Data:</strong> Tulis data numerik di kolom.</li>
+                <li><strong>Pilih Data:</strong> Sorot/blok seluruh data.</li>
+                <li><strong>Sisipkan Bagan:</strong> Pilih <em>Insert > Chart > Histogram</em>.</li>
+                <li><strong>Sesuaikan:</strong> Ubah jumlah "bins" (interval) agar hasil lebih akurat.</li>
+            </ul>
+            
+            <a href="#tabel-utama" class="btn-link">&uarr; Kembali ke Tabel Utama</a>
+        </section>
+<section id="pembahasan-scatter" class="materi-section">
+            <h3>Materi Detail: SCATTER DIAGRAM (Diagram Pencar)</h3>
+            
+            <img src="contoh scatter.png" alt="Contoh Scatter Diagram" class="img-large">
+            
+
+            <p>Scatter diagram (diagram pencar) digunakan untuk mengamati dan memvisualisasikan hubungan atau korelasi antara dua variabel numerik, menunjukkan apakah hubungannya positif, negatif, atau tidak ada hubungan sama sekali, serta mengidentifikasi pola, tren, kelompok (clustering), dan pencilan (outliers) dalam data untuk tujuan analisis dan prediksi.</p>
+            
+            <h4>Fungsi Utama Scatter Diagram:</h4>
+            <ul>
+                <li><strong>Melihat Hubungan Antar Variabel:</strong> Menampilkan seberapa erat hubungan antara variabel independen (sumbu X) dan variabel dependen (sumbu Y).</li>
+                <li><strong>Mengidentifikasi Jenis Korelasi:</strong> Menentukan apakah hubungannya positif (berbanding lurus), negatif (berbanding terbalik), atau tidak berkorelasi.</li>
+                <li><strong>Menemukan Pola dan Tren:</strong> Membantu melihat pola penyebaran data, seperti tren linier atau nonlinier, yang sulit dilihat dari data mentah.</li>
+                <li><strong>Mendeteksi Outliers:</strong> Menunjukkan titik data yang menyimpang dari pola umum (pencilan).</li>
+                <li><strong>Dasar Prediksi:</strong> Memungkinkan prediksi nilai satu variabel berdasarkan nilai variabel lain jika pola yang jelas terbentuk (misalnya, garis tren).</li>
+                <li><strong>Mengidentifikasi Akar Penyebab:</strong> Sering digunakan setelah membuat diagram sebab-akibat (fishbone) untuk menguji secara objektif apakah penyebab dan akibat tertentu benar-benar saling terkait.</li>
+            </ul>
+
+            <h4>Contoh Penggunaan:</h4>
+            <ul>
+                <li>Hubungan antara jam belajar (X) dan nilai ujian (Y).</li>
+                <li>Hubungan antara konsumsi gula (X) dan kenaikan berat badan (Y).</li>
+                <li>Hubungan antara kecepatan kendaraan (X) dan jarak pengereman (Y).</li>
+            </ul>
+            
+            <a href="#tabel-utama" class="btn-link">&uarr; Kembali ke Tabel Utama</a>
+        </section>
+        <section id="pembahasan-control-chart" class="materi-section">
+            <h3>Materi Detail: CONTROL CHART (Peta Kendali)</h3>
+            
+            <img src="Contoh control chart.png" alt="Contoh Control Chart" class="img-large">
+            
+
+            <p>Control chart (peta kendali) digunakan untuk memantau stabilitas suatu proses dari waktu ke waktu guna memastikan kualitas tetap konsisten, mengidentifikasi variasi yang tidak biasa (penyebab khusus) yang memerlukan tindakan perbaikan, serta membedakan variasi alami (penyebab umum) yang tidak perlu diutak-atik, sehingga membantu pengambilan keputusan untuk perbaikan proses bisnis atau manufaktur secara berkelanjutan.</p>
+            
+            <h4>Fungsi Utama Control Chart:</h4>
+            <ul>
+                <li><strong>Membedakan Penyebab Variasi:</strong> Membantu membedakan antara variasi acak alami (common cause variation) dan variasi yang disebabkan oleh masalah spesifik (special cause variation).</li>
+                <li><strong>Mendeteksi Penyimpangan:</strong> Menunjukkan kapan suatu proses keluar dari batas kendali (UCL/LCL), menandakan adanya masalah kualitas atau anomali.</li>
+                <li><strong>Memprediksi Kinerja Proses:</strong> Memberikan gambaran tentang rentang nilai target dan stabilitas proses di masa depan.</li>
+                <li><strong>Mendukung Perbaikan Kualitas:</strong> Membantu identifikasi akar masalah dan mendorong tindakan korektif untuk produktivitas.</li>
+                <li><strong>Memantau Konsistensi:</strong> Mengukur apakah suatu proses berjalan secara konsisten atau mengalami tren (naik/turun) dari waktu ke waktu.</li>
+            </ul>
+
+            <h4>Bagaimana Cara Kerjanya:</h4>
+            <ol>
+                <li><strong>Pengumpulan Data:</strong> Data pengukuran (misalnya berat produk, waktu siklus) dikumpulkan secara berkala.</li>
+                <li><strong>Penentuan Batas:</strong> Dibuat garis tengah (rata-rata), Batas Kendali Atas (UCL), dan Batas Kendali Bawah (LCL) berdasarkan data historis.</li>
+                <li><strong>Plotting Data:</strong> Data baru diplot pada grafik; jika berada dalam batas, proses terkendali. Jika di luar batas, ada masalah yang perlu diselidiki.</li>
+            </ol>
+
+            <h4>Contoh Penggunaan:</h4>
+            <ul>
+                <li>Industri manufaktur untuk memantau dimensi produk atau jumlah cacat.</li>
+                <li>Laboratorium untuk mengontrol akurasi instrumen pengukur.</li>
+                <li>Layanan pelanggan untuk memantau waktu respons secara berkala.</li>
+            </ul>
+            
+            <a href="#tabel-utama" class="btn-link">&uarr; Kembali ke Tabel Utama</a>
+        </section>
+
+        <footer class="navigation" style="margin-top: 50px;">
             <a href="index.html" class="btn-back">Kembali ke Daftar Isi</a>
         </footer>
     </main>
