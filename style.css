@@ -77,6 +77,142 @@ body {
             border-radius: 5px;
             box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
         }
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-       
-        
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+.main-header {
+    background-color: #004a99; /* Warna biru korporat */
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 5px solid #00d4ff;
+}
+
+.sub-header {
+    font-weight: 300;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
+/* Konten Utama */
+.content {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+h3 {
+    color: #004a99;
+    border-left: 4px solid #00d4ff;
+    padding-left: 10px;
+    margin-bottom: 1rem;
+}
+
+/* List Menu di Halaman Utama */
+.isi-pelatihan ol {
+    padding-left: 20px;
+}
+
+.isi-pelatihan li {
+    margin-bottom: 10px;
+}
+
+.isi-pelatihan a {
+    text-decoration: none;
+    color: #004a99;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.isi-pelatihan a:hover {
+    color: #00d4ff;
+    padding-left: 5px;
+}
+
+/* Tabel 7QC Tools */
+.qcc-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+
+.qcc-table th, .qcc-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.qcc-table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.qcc-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+/* Mengatur pembungkus tombol agar ke kiri */
+.navigation {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-start; /* Ini yang menggeser tombol ke kiri */
+}
+
+/* Tombol sesuai gambar Mister Pjg */
+.btn-back {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: #2c3e50; 
+    color: #ffffff; 
+    text-decoration: none;
+    border-radius: 8px; 
+    font-size: 18px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+    border: none;
+}
+
+.btn-back:hover {
+    background-color: #1a252f;
+}
+
+/* Panah otomatis */
+.btn-back::before {
+    content: "←"; 
+    margin-right: 10px;
+    font-size: 20px;
+}
+/* Rumus agar gambar tampil profesional */
+.img-tool {
+    width: 120px; /* Lebar yang ideal untuk tabel */
+    height: auto; /* Agar tinggi gambar menyesuaikan/proporsional */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease; /* Efek halus saat di-hover */
+    cursor: pointer;
+}
+
+/* Efek Zoom saat Mister Pjg mengarahkan kursor ke gambar */
+.img-tool:hover {
+    transform: scale(2.5); /* Gambar membesar 2,5 kali lipat */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 99;
+}
