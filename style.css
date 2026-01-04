@@ -91,9 +91,9 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+/* Header yang aktif*/
 .main-header {
-    background-color: #004a99; /* Warna biru korporat */
+    background-color: #3cb371; /* Warna biru korporat */
     color: white;
     padding: 2rem;
     text-align: center;
@@ -101,7 +101,7 @@ body {
 }
 
 .sub-header {
-    font-weight: 300;
+    font-weight: 250;
     margin-top: 5px;
     letter-spacing: 2px;
 }
@@ -172,31 +172,6 @@ h3 {
     justify-content: flex-start; /* Ini yang menggeser tombol ke kiri */
 }
 
-/* Tombol sesuai gambar Mister Pjg */
-.btn-back {
-    display: inline-flex;
-    align-items: center;
-    padding: 12px 24px;
-    background-color: #2c3e50; 
-    color: #ffffff; 
-    text-decoration: none;
-    border-radius: 8px; 
-    font-size: 18px;
-    font-weight: 500;
-    transition: background 0.3s ease;
-    border: none;
-}
-
-.btn-back:hover {
-    background-color: #1a252f;
-}
-
-/* Panah otomatis */
-.btn-back::before {
-    content: "←"; 
-    margin-right: 10px;
-    font-size: 20px;
-}
 /* Rumus agar gambar tampil profesional */
 .img-tool {
     width: 120px; /* Lebar yang ideal untuk tabel */
@@ -215,4 +190,78 @@ h3 {
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
     position: relative;
     z-index: 99;
+}
+.rapat {
+    list-style-position: inside; /* Menjaga titik (bullet) tetap di dalam area teks */
+    padding-left: 0;             /* Menghilangkan jarak di sebelah kiri */
+    margin-left: 0;              /* Memastikan margin benar-benar nol */
+    text-align: left;            /* Memastikan teks rata kiri */
+}
+.rapat li {
+    margin-bottom: 0px;          /* Memberi sedikit jarak antar poin agar tidak terlalu dempet */
+}
+/* Menyamaratakan semua list agar sejajar dengan teks di atasnya */
+main.content ul, 
+main.content ol, 
+.rapat {
+    padding-left: 1.2rem; /* Memberikan ruang minimal agar bullet/angka tidak terpotong */
+    margin-left: 0;
+    list-style-position: outside; /* Menjaga teks tetap rapi di samping bullet */
+}
+
+/* Khusus untuk list yang sangat mepet (seperti kelas .rapat) */
+.rapat {
+    padding-left: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Mengatur jarak antar poin agar tidak terlalu dempet */
+main.content li {
+    margin-bottom: 5px;
+    text-align: left;
+}
+/* Button kembali ke daftar isi*/
+.back-button {
+    display: inline-flex !important; /* Memaksa tampil sebagai kotak */
+    align-items: center;
+    padding: 5px 12px;
+    background-color: #ff4500; /* Warna biru gelap sesuai desain Mister */
+    color: #ffffff !important; /* Warna teks putih */
+    text-decoration: none !important; /* Menghapus garis bawah */
+    border-radius: 8px; 
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #1a252f;
+    color: white;
+}
+
+/* Menambahkan panah otomatis di depan teks */
+.back-button::before {
+    content: "←"; 
+    margin-right: 10px;
+    font-size: 20px;
+}
+/* Mengatur Lebar Kolom 1 dan Mengurangi Jarak (Padding) di Tabel Materi 3 */
+.tabel-qcdsme th, 
+.tabel-qcdsme td {
+    padding: 6px 10px !important; /* Angka 6px ini untuk mengurangi jarak atas-bawah */
+}
+
+.tabel-qcdsme td:nth-child(1) {
+    width: 40% !important; /* Melebarkan Kolom 1 sesuai permintaan Mister */
+    font-weight: bold;
+    background-color: #fcfcfc;
+    vertical-align: middle;
+}
+
+.tabel-qcdsme td:nth-child(2) {
+    vertical-align: top;
+    line-height: 1.4; /* Agar jarak antar baris teks lebih rapat dan rapi */
 }
