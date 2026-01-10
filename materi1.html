@@ -4,21 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Materi 1 - Pengertian QCC</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_materi_1.css">
     <style>
-        /* CSS KHUSUS MATERI 1 (Sisanya sudah ada di style.css) */
-        .image-container { text-align: center; margin: 20px 0; }
-        .image-container img { max-width: 100%; height: auto; border-radius: 8px; }
-        .history-images { display: flex; justify-content: center; gap: 15px; margin: 20px 0; }
-        .history-images img { width: 45%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        .highlight-box { background-color: #e8f6f3; border-left: 5px solid #16a085; padding: 15px; font-style: italic; margin: 20px 0; }
-        .section-title { margin-top: 30px; background-color: #2c3e50; color: white; padding: 8px 15px; border-radius: 4px; }
-        .sub-section { margin-bottom: 20px; }
-        .conclusion-box { background-color: #f8f9fa; padding: 15px; border-radius: 8px; border: 1px solid #ddd; margin: 20px 0; }
-        
-        /* Perbaikan agar list tidak terlalu ke kiri */
-        ul, ol { padding-left: 25px; margin-bottom: 15px; }
-        li { margin-bottom: 5px; }
+        /* Tambahan CSS agar pergerakan scroll halus */
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
 <body>
@@ -28,9 +19,27 @@
         <div class="sub-header">QUALITY CONTROL CIRCLE (QCC)</div>
     </header>
 
+    <nav class="navigation-menu">
+        <button id="menuBtn" class="menu-button">☰ Menu Navigasi</button>
+        
+        <div id="menuContainer" class="floating-container">
+            <ul class="nav-list">
+                <li><a href="#pengertian">Pengertian QCC</a></li>
+                <li><a href="#esensi-section">Esensi QCC</a></li>
+                <li><a href="#objektif-section">Objektif QCC</a></li>
+                <li><a href="#history-section">Sejarah QCC</a></li>
+                <li><a href="#gagasan-section">Gagasan Dasar</a></li>
+                <li><a href="#leader-section">Kandidat & Leader</a></li>
+                <li><a href="#anggota-section">Anggota & Fungsi</a></li>
+                <li><a href="#rapat-section">Rapat/Meeting QCC</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <main class="content">
         <h2>Apakah QCC itu?</h2>
-         <section id="pengertian">
+        
+        <section id="pengertian">
             <u><h3>Pengertian Aktivitas QCC adalah:</h3></u>
             <div class="highlight-box">
                 “Kelompok kecil yang terdiri dari 4-10 karyawan dalam unit kerja yang sama dan dengan sukarela (voluntarily) dan berkesinambungan melakukan kontrol dan perbaikan terhadap Kualitas dari pekerjaan, produk atau jasa yang dihasilkan”.
@@ -43,13 +52,12 @@
                 <li>Mengembangkan kemampuan diri dan kerja sama tim.</li>
             </ul>
         </section>
+
         <div class="image-container">
-            <img src="gambar_qcc.png" alt="Ilustrasi QC-Circle">
+            <img src="gambar_qcc.png" alt="Ilustrasi QC-Circle" class="img-small">
         </div>
 
-       
-
-        <section class="esensi-qcc">
+        <section class="esensi-qcc" id="esensi-section">
             <h3 class="section-title">Esensi QCC</h3>
             <div class="sub-section">
                 <h4>A. Berawal dari area kerja yang sama (the same workshop)</h4>
@@ -76,7 +84,7 @@
             </div>
         </section>
 
-        <section class="objektif-qcc">
+        <section class="objektif-qcc" id="objektif-section">
             <h3 class="section-title">Objektif QCC</h3>
             <ul>
                 <li>Komunikasi dua arah (mutual communication)</li>
@@ -97,7 +105,7 @@
             </ol>
         </div>
 
-        <section class="history-section">
+        <section class="history-section" id="history-section">
             <h2 class="section-title">Sejarah Lahirnya QC-Circle</h2>
             <p>Diketahui bahwa design kualitas yang bagus atau standard kerja yang bagus tidak selalu menghasilkan produk yang memiliki kualitas bagus juga. Pekerja yang berhadapan langsung dengan produk memiliki peranan penting terhadap kualitas produk itu sendiri.</p>
             <p>Sejarah QCC dimulai di Jepang pada tahun 1960-an sebagai respons terhadap persaingan industri, dipelopori oleh raksasa seperti Toyota.</p>
@@ -130,14 +138,14 @@
                 <h4>3. Adaptasi dan Evolusi (1990-an - Sekarang)</h4>
                 <p>Prinsip dasarnya berevolusi menjadi metodologi lain seperti <strong>Kaizen, Six Sigma,</strong> dan keterlibatan karyawan serupa.</p>
             </div>
-            <div class="highlight-box" style="font-style: normal; background-color: #fcf3cf; border-left: 5px solid #f1c40f;">
+            <div class="highlight-box yellow-box">
                 Saat ini, kegiatan QC-Circle tetap menjadi platform strategis perusahaan untuk mempromosikan efisiensi dan inovasi.
             </div>
         </section>
 
-        <h2 class="section-title">Gagasan Dasar dari QCC</h2>
+        <h2 class="section-title" id="gagasan-section">Gagasan Dasar dari QCC</h2>
         <section class="sub-section">
-            <div class="highlight-box" style="background-color: #f8f9fa; border-left: 5px solid #2c3e50; font-style: normal;">
+            <div class="highlight-box dark-box">
                 <strong>A. Kontribusi terhadap Perusahaan</strong>
                 <p>Tujuan utama aktivitas QCC adalah membangun budaya perusahaan yang kuat (<em>corporate culture</em>). Jika hanya manajemen puncak yang bekerja sendiri, perusahaan tidak akan mampu memperbaiki struktur kerja atau berkembang secara berkelanjutan dalam jangka panjang.</p>
                 <strong>B. Menghormati Kemanusiaan (Humanis)</strong>
@@ -154,14 +162,14 @@
 
         <h3 class="section-title">Dua Efek Pengembangan Manusia </h3>
         <div class="image-container">
-            <img src="efekQCC.png" alt="Pengembangan Manusia" style="width: 30%;">
+            <img src="efekQCC.png" alt="Pengembangan Manusia" class="img-30">
         </div>
-        <div class="sub-section" style="display: flex; gap: 20px; flex-wrap: wrap;">
-            <div style="flex: 1; min-width: 250px; background: #e8f6f3; padding: 15px; border-radius: 8px;">
+        <div class="flex-row">
+            <div class="flex-item info-teal">
                 <strong>1. Pengembangan Diri (Self-development)</strong>
                 <p>Setiap anggota tim QCC belajar secara mandiri dengan proaktif bertanya, menyelidiki, dan menerapkan hasil pembelajaran dari aktivitas tersebut. Jangan menunggu instruksi atau arahan dari orang lain, ambil inisiatif sendiri.</p>
             </div>
-            <div style="flex: 1; min-width: 250px; background: #ebf5fb; padding: 15px; border-radius: 8px;">
+            <div class="flex-item info-blue">
                 <strong>2. Pengembangan Timbal-Balik (Mutual-development)</strong>
                 <p>Karena QCC merupakan aktivitas kelompok, setiap anggota tim dapat saling belajar satu sama lain melalui prinsip timbal balik.</p>
             </div>
@@ -169,10 +177,10 @@
 
         <h2 class="section-title">Manfaat & Keuntungan Aktivitas QCC</h2>
         <div class="image-container">
-            <img src="keuntunganQCC.png" alt="Keuntungan QCC" style="width: 30%;">
+            <img src="keuntunganQCC.png" alt="Keuntungan QCC" class="img-30">
         </div>
         <section class="sub-section">
-            <ul>
+            <ol>
                 <li>Kemampuan ketua QCC dalam administrasi dan kepemimpinan meningkat.</li>
                 <li>Anggota tim QCC menjadi lebih tertarik bekerja, sekaligus moral mereka meningkat.</li>
                 <li>Anggota lebih termotivasi untuk memperbaiki kinerja dan mau bekerja dengan baik.</li>
@@ -181,16 +189,16 @@
                 <li>Hubungan antar individu di tempat kerja semakin berkembang.</li>
                 <li>Atasan dan staf dapat bekerja sama dengan lebih baik.</li>
                 <li>Instruktur lebih memahami kemampuan karyawan secara detail.</li>
-            </ul>
+            </ol>
         </section>
 
         <h2 class="section-title">Cara Memulai Aktivitas QCC</h2>
         <div class="image-container">
-            <img src="memulaiQCC1.png" alt="Memulai QCC" style="width: 30%;">
+            <img src="memulaiQCC1.png" alt="Memulai QCC" class="img-30">
         </div>
         <section class="sub-section">
             <ol>
-                <li>Pilih ketua tim QCC.</li>
+                <li>Pilih leader/ketua tim QCC.</li>
                 <li>Mulai dengan rapat bersama seluruh anggota.</li>
                 <li>Lakukan diskusi rutin secara periodik.</li>
                 <li>Awali dengan masalah yang mudah, lalu bertahap ke masalah yang lebih kompleks.</li>
@@ -201,7 +209,7 @@
 
         <h3 class="section-title" id="leader-section">Kandidat & Karakter Leader QCC</h3>
         <section class="sub-section">
-            <div class="conclusion-box" style="border-color: #3498db; background-color: #f0f7ff;">
+            <div class="conclusion-box candidate-blue">
                 <ol>
                     <li>Tindak lanjuti ide dan opini anggota, serta berikan arahan.</li>
                     <li>Pantau implementasi setiap anggota dan berikan arahan.</li>
@@ -219,11 +227,11 @@
                 </ol>
             </div>
             <div class="image-container">
-                <img src="leaderQCC.png" alt="Leader QCC" style="width: 30%;">
+                <img src="leaderQCC.png" alt="Leader QCC" class="img-30">
             </div>
         </section>
 
-        <div class="highlight-box" style="background-color: #fdedec; border-left: 5px solid #e74c3c; font-style: normal;">
+        <div class="highlight-box leader-red">
             <strong>Kepemimpinan adalah:</strong>
             <ol>
                 <li>Berorientasi pada target.</li>
@@ -247,9 +255,9 @@
             </ol> 
         </div>
 
-        <h3 class="section-title">Anggota QCC dan Fungsinya</h3>
+        <h3 class="section-title" id="anggota-section">Anggota QCC dan Fungsinya</h3>
         <div class="image-container">
-            <img src="anggotaQCC.png" alt="Anggota QCC" style="width: 30%;">
+            <img src="anggotaQCC.png" alt="Anggota QCC" class="img-30">
         </div>
         <section class="sub-section">
             <strong>Fungsi Anggota/Member QCC:</strong>
@@ -269,7 +277,7 @@
             </ol>
         </section>
 
-        <h3 class="section-title">Rapat / Meeting QCC</h3>
+        <h3 class="section-title" id="rapat-section">Rapat / Meeting QCC</h3>
         <p>Rapat /meeting QCC adalah forum di mana anggota berkumpul dari kesibukan masing-masing untuk memeriksa kemajuan dan mempelajari prosedur sesuai aktivitas QCC. Rapat QCC menjadi penggerak utama berjalannya aktivitas QCC.</p>
         
         <strong>Tujuan rapat/meeting QCC:</strong>
@@ -308,10 +316,10 @@
         </ul>
 
         <div class="image-container"> 
-            <img src="wakturapatQCC.png" alt="Waktu Rapat QCC" style="width: 100%;">
+            <img src="wakturapatQCC.png" alt="Waktu Rapat QCC" class="img-full">
         </div>
 
-        <div class="highlight-box" style="background-color: #f8f9fa; border-left: 5px solid #2c3e50; font-style: normal;">
+        <div class="highlight-box dark-box">
             <h3>Brainstorming Ide dan Gagasan</h3>
             <p>Brainstorming adalah metode untuk mengumpulkan pendapat dengan melibatkan partisipasi semua peserta demi mendapatkan ide terbaik.</p>
 
@@ -332,7 +340,44 @@
                 <li>Semua ide yang disampaikan harus dicatat.</li>
             </ol>
         </div>
-<a href="index.html" class="back-button">Kembali ke Daftar Isi</a>
+
+        <a href="index.html" class="back-button">Kembali ke Daftar Isi</a>
     </main>
+
+    <div class="fixed-top-btn">
+        <a href="#" class="btn-top" title="Kembali ke Atas">&uarr;</a>
+    </div>
+
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const menuContainer = document.getElementById('menuContainer');
+
+        // Toggle menu saat tombol diklik
+        menuBtn.addEventListener('click', function(e) {
+            e.stopPropagation(); // Mencegah event bubbling
+            if (menuContainer.style.display === 'block') {
+                menuContainer.style.display = 'none';
+            } else {
+                menuContainer.style.display = 'block';
+            }
+        });
+
+        // Menutup menu jika user mengklik link di dalamnya
+        const navLinks = document.querySelectorAll('.nav-list li a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuContainer.style.display = 'none';
+            });
+        });
+
+        // Menutup menu jika klik di luar area menu
+        window.onclick = function(event) {
+            if (!event.target.matches('.menu-button') && !event.target.closest('.floating-container')) {
+                if (menuContainer.style.display === 'block') {
+                    menuContainer.style.display = 'none';
+                }
+            }
+        }
+    </script>
 </body>
 </html>

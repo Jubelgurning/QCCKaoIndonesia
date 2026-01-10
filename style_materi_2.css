@@ -1,0 +1,158 @@
+/* Pengaturan Dasar */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: large
+    
+}
+
+/* Header */
+.main-header {
+    background-color: rgb(0, 172, 143);
+    color: white;
+    padding: 15px 20px;
+    /* Kita hapus text-align: center dari sini agar bisa diatur masing-masing */
+}
+
+.main-header h1 {
+    font-size: 14px;      /* Ukuran tulisan kecil */
+    text-align: left;    /* Posisi di kiri */
+    margin: 0;
+    font-weight: normal; /* Tidak tebal */
+}
+
+.sub-header {
+    display: block;      /* Memastikan judul ini mengambil baris baru */
+    font-size: 22px;      /* Ukuran lebih besar agar jelas */
+    text-align: center;  /* Posisi di tengah */
+    font-weight: bold;   /* Tulisan tebal */
+    margin-top: 15px;
+    text-transform: uppercase; /* Membuat huruf kapital semua agar tegas */
+}
+
+/* Konten */
+.content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Tabel QC Tools */
+.qcc-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.qcc-table th, .qcc-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.qcc-table th {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.img-tool {
+    width: 80px;
+    height: auto;
+    border-radius: 4px;
+    /* Menambahkan transisi agar gerakan membesar halus (0.3 detik) */
+    transition: transform 0.3s ease; 
+    cursor: zoom-in; /* Mengubah bentuk kursor agar user tahu bisa diperbesar */
+}
+
+.img-tool:hover {
+    /* Memperbesar gambar menjadi 2.5 kali lipat dari ukuran asli */
+    transform: scale(2.5); 
+    /* Membuat gambar berada di lapisan paling atas agar tidak tertutup teks lain */
+    position: relative;
+    z-index: 10; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Bagian Materi Detail */
+.materi-section {
+    margin-top: 40px;
+    padding: 25px;
+    border-top: 4px solid #004d40;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.img-large {
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Link dan Tombol */
+.btn-link {
+    display: inline-block;
+    margin: 15px 0;
+    color: #00796b;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 15px;
+
+/* Floating Top Button */
+.fixed-top-container {
+    position: fixed; 
+    bottom: 30px; 
+    left: 50%; 
+    transform: translateX(390px); 
+    z-index: 1000;
+}
+
+.btn-top-circle {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: #00796b;
+    color: white;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 24px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-top-circle:hover {
+    background-color: #004d40;
+    transform: scale(1.1);
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .fixed-top-container {
+        left: auto;
+        right: 20px;
+        transform: none;
+    }
+}

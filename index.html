@@ -4,50 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Module Training QCC</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        /* Menggunakan CSS untuk memberi jarak yang pasti */
-        .isi-pelatihan {
-            margin-top: 40px; /* Jarak atas antara sasaran dan isi pelatihan */
-            padding: 10px;
-        }
-
-        /* Merapikan list agar lebih enak dibaca */
-        .isi-pelatihan ol li {
-            margin-bottom: 10px; 
-        }
-
-        /* Membersihkan struktur header agar rapi */
-        .main-header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-    </style>
+    <link rel="stylesheet" href="styleindex.css">
 </head>
 <body>
 
     <header class="main-header">
-        <h1>Modul Edukasi dan Pelatihan Kao Indonesia</h1>
-        <h2 class="sub-header">QUALITY CONTROL CIRCLE (QCC)</h2>
+        <p class="company-name">Modul Edukasi dan Pelatihan Kao Indonesia</p>
+        <h1 class="sub-header">QUALITY CONTROL CIRCLE (QCC)</h1>
     </header>
-
-    <main class="content">
+    
+    <main class="content-area">
         <section class="intro">
-            <h3>Sasaran Pelatihan</h3>
-            <p>“Memahami konsep QCC dan fungsi setiap orang yang terlibat dalam aktivitas meeting atau diskusi dan proses aktivitasnya”</p>
+            <h1 class="section-title">Sasaran Pelatihan</h1>
+            <p class="text-large">
+                “Memahami konsep QCC dan fungsi setiap orang yang terlibat dalam aktivitas meeting atau diskusi dan proses aktivitasnya”
+            </p>
         </section>
 
         <section class="isi-pelatihan">
-            <h3>Isi Pelatihan</h3>
-            <ol>
+            <h3 class="section-title">Isi Pelatihan</h3>
+            <ol class="materi-list">
                 <li><a href="materi1.html">Pengertian, konsep, organisasi dan fungsi, meeting</a></li>
                 <li><a href="materi2.html">7QC Tools</a></li>
                 <li><a href="materi3.html">Problem solving</a></li>
                 <li><a href="materi4.html">PDCA</a></li>
                 <li><a href="materi5.html">Kaizen</a></li>
+                <li><a href="#" onclick="cekAkses(event, 'laporan')">Contoh Laporan QCC (Akses Terbatas)</a></li>
             </ol>
         </section>
+
+        <nav class="gallery-nav">
+            <a href="#" onclick="cekAkses(event, 'gallery')" class="btn-gallery">
+                <span class="icon">🖼️</span> Gallery
+            </a>
+        </nav>
     </main>
 
+    <div id="passwordModal" class="modal-overlay" style="display: none;">
+        <div class="modal-box">
+            <h3>🔐 Akses Terbatas</h3>
+            <p id="modalText">Masukkan Kode Akses Khusus:</p>
+            <input type="password" id="inputPass" placeholder="****">
+            <button onclick="verifikasi()">Masuk</button>
+            <p class="btn-cancel" onclick="tutupModal()">Batal</p>
+        </div>
+    </div>
+
+    <script>
+        // Variabel untuk menyimpan tujuan halaman
+        let targetPage = "";
+
+        function cekAkses(event, tipe) {
+            event.preventDefault();
+            // Tentukan halaman tujuan berdasarkan tombol yang diklik
+            if (tipe === 'gallery') {
+                targetPage = "materi_gallery.html";
+                document.getElementById("modalText").innerText = "Masukkan Kode untuk Gallery:";
+            } else if (tipe === 'laporan') {
+                targetPage = "MatericontohQCC.html";
+                document.getElementById("modalText").innerText = "Masukkan Kode untuk Contoh Laporan:";
+            }
+            
+            document.getElementById("passwordModal").style.display = "flex";
+            document.getElementById("inputPass").focus();
+        }
+
+        function tutupModal() {
+            document.getElementById("passwordModal").style.display = "none";
+            document.getElementById("inputPass").value = "";
+        }
+
+        function verifikasi() {
+            var pass = document.getElementById("inputPass").value;
+            // Password tetap pjg123 sesuai permintaan PJG
+            if (pass === "pjg123") {
+                window.location.href = targetPage;
+            } else {
+                alert("Kode salah! Anda tidak memiliki akses.");
+                document.getElementById("inputPass").value = "";
+            }
+        }
+
+        // Shortcut Enter
+        document.getElementById("inputPass").addEventListener("keypress", function(event) {
+            if (event.key === "Enter") { verifikasi(); }
+        });
+    </script>
 </body>
 </html>

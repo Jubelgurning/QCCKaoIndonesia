@@ -1,0 +1,190 @@
+Check Sheet (Lembar Periksa) adalah lembar/formulir yang dirancang untuk mengumpulkan data yang berfungsi sebagai metode sederhana dan sistematis untuk mengumpulkan data, mencatat frekuensi masalah atau cacat, dan mengidentifikasi pola awal secara terstruktur, sering kali menggunakan tanda centang (✓) pada format tabel untuk mempermudah analisis data awal sebelum diolah lebih lanjut menjadi histogram atau diagram lain. 
+Fungsi Utama Check Sheet dalam 7 QC Tools:
+Pengumpulan Data Sistematis: Mencatat kejadian atau data yang relevan secara berulang di lokasi kejadian (misalnya, frekuensi produk cacat, lokasi cacat).
+Identifikasi Pola & Frekuensi: Membantu melihat pola kemunculan masalah atau jenis cacat dengan mudah, seperti berapa kali suatu masalah terjadi.
+Dasar Analisis Selanjutnya: Data yang terkumpul menjadi input penting untuk alat QC lain seperti Histogram (distribusi data), Pareto Chart (prioritas masalah), dan Fishbone Diagram (akar penyebab).
+Monitoring Proses: Digunakan untuk memantau parameter proses atau kepatuhan terhadap standar secara berkala. 
+Contoh Penggunaan & Fungsi:
+Process Distribution Check Sheet: Mencatat distribusi data proses (misalnya, panjang produk).
+Defective Item Check Sheet: Mencatat jenis cacat yang sering muncul (misalnya, sobek, kotor, penyok).
+Defect Location Check Sheet: Mencatat lokasi di mana cacat terjadi pada produk (misalnya, bagian atas, samping, bawah).
+Defective Cause Check Sheet: Mencatat penyebab cacat (misalnya, mesin, material, operator). 
+Cara Membuat Check Sheet:
+Tentukan apa yang akan diamati/dicatat (jenis masalah, lokasi, penyebab).
+Tentukan kapan dan berapa lama data akan dikumpulkan.
+Rancang format lembar dengan kolom kategori dan baris kejadian, gunakan tanda centang (✓) saat data muncul.
+Tambahkan etiket pada setiap bagian formulir.
+Rekam data setiap kali kejadian terjadi. 
+Rapat QCC adalah mesin penggerak aktivitas QC-Circle.
+Ada dua jenis rapat:
+Small Meeting (Meeting kecil) → Dilakukan lebih sering, cepat, dan fokus pada masalah spesifik.
+Regular Meeting (Meeting berkala) → Dilakukan sesuai jadwal untuk mengevaluasi hasil dan merencanakan langkah berikutnya.
+
+Small Meeting
+Memeriksa apa yang sudah dilakukan dan apa yang harus dilakukan.
+Tetapkan keputusan dengan jelas.
+Laksanakan keputusan yang sudah dibuat.
+
+Regular Meeting
+Mengevaluasi hasil implementasi.
+Menetapkan prosedur untuk langkah berikutnya.
+
+rapat QCC harus dilakukan secara terstruktur. Ada rapat kecil untuk masalah cepat dan rapat berkala untuk evaluasi. Setiap rapat harus menghasilkan keputusan yang jelas dan dilaksanakan. Jika tidak, QC-Circle akan berhenti berfungsi.”
+Jika keputusan rapat tidak dijalankan, QC-Circle akan menjadi “circle tidur” (tidak aktif).
+Aktivitas di luar rapat juga penting: peran individu dan fungsi antar rapat harus berjalan.
+
+
+
+Ulangi siklus ini → Small meeting → Regular meeting → Eksekusi → Evaluasi.
+
+Tujuan utama aktivitas QCC adalah membangun budaya perusahaan yang kuat. Jika hanya manajemen puncak yang bekerja sendiri, perusahaan tidak akan mampu memperbaiki struktur kerja atau berkembang secara berkelanjutan dalam jangka panjang.
+Gagasan Dasar dari QCC
+A. Kontribusi terhadap perusahaan
+Tujuan dasar dari aktivitas QCC adalah mengembangkan budaya perusahaan (corporate culture).
+Jika top manajemen bekerja sendiri, maka perusahaan tidak dapat berharap untuk memperbaiki struktur kerja atau pengembangan perusahaan dalam jangka waktu lama.
+B. Menghormati kemanusiaan (humanis)
+Kebanyakan pekerja menghabiskan sepertiga hari-nya di tempat kerja.
+Saling menghargai dan menghormati merupakan persyaratan dari pelaksanaan QCC
+Menerima semua masukan tanpa membeda-bedakan, dan saling belajar
+Mengupayakan suasana tempat kerja yang aman dan nyaman 
+C. Memperlihatkan kemampuan manusia dan potensi yang tersembunyi
+Kebanyakan pekerja menghabiskan sepertiga hari-nya di tempat kerja.
+Apa yang harus dilakukan untuk mengembangkan keahlian kerja mereka?
+Jawabnya adalah membuat sebuah area berlatih dimana karyawan dapat berpikir dan memperlihatkan kemampuan mereka sepenuhnya.
+
+Dua Efek Pengembangan Manusia
+1. Pengembangan diri (Self-development) 
+Setiap anggota di dalam tim QCC belajar mandiri, dengan pro-aktif bertanya dan menyelidiki, serta menerapkan apa yang diperoleh dari aktivitas tersebut. 
+“Jangan menunggu sampai orang lain memberikan instruksi atau arahan”.
+2. Pengembangan timbal-balik (Mutual-development) 
+Karena aktivitas QCC adalah aktivitas kelompok, maka setiap anggota tim QCC dapat saling belajar satu dengan yang lainnya, melalui azas timbal-balik.
+
+Keuntungan dari aktivitas QCC
+1. 	Kemampuan ketua QCC mengenai administrasi dan kepemimpinan meningkat
+2. 	Anggota tim QCC menjadi lebih tertarik bekerja dan secara bersamaan moral mereka meningkat.
+3. 	Anggota menjadi lebih tertarik untuk memperbaiki kinerja dan mau untuk bekerja.
+4. 	Dampak yang sangat terlihat adalah pengurangan biaya (cost reduction), efisiensi, dan kualitas.
+5. 	Mereka yang sebelumnya kurang memiliki motivasi kerja berubah menjadi memiliki motivasi yang lebih jelas.
+6. 	Hubungan antar manusia dalam area kerja menjadi berkembang.
+7. 	Atasan dan staf dapat saling melaksanakan pekerjaan lebih baik.
+8. 	Instruktur yang mengelola karyawan dapat lebih mengetahui kemampuan karyawan secara terperinci.
+
+
+Memulai Aktivitas QCC 
+1. Bagaimana memulai Aktivitas QCCPilih kandidat ketua (Leader) tim.
+1.Mulailah QC-Circle dengan mengadakan rapat (meeting) bersama seluruh anggota.
+2.Jalankan aktifitas dengan berdiskusi bersama seluruh anggota secara periodik 
+3.Mulai dari hal yang mudah dan isu yang cepat dilakukan, kemudian secara bertahap menuju masalah yang lebih sulit.
+4.Di bagian awal, mintalah kerjasama dari fasilitator, advisor, promotor atau atasan.
+5.Tingkatkan kemampuan dari QCC Leader dan anggota.
+
+2. Fungsi QC-Circle Leader
+1.Menindak-lanjuti opini dan ide dari semua anggota dan berikan arahan.
+2.Menindak-lanjuti implementasi setiap anggota dan berikan arahan.
+3.Koordinator dan inisiator dalam belajar proses, teknologi, dan metode QC.
+4.Mengadakan rapat QCC dan membuat ringkasan pencapaian kegiatan.
+5.Menjadi contoh sebagai leader dan mempromosikan leader selanjutnya.
+6.Memiliki kesempatan lebih dalam berdiskusi dengan fasilitator atau atasan 
+-Mengerti dan menyetujui kebijakan dan rencana atasan sebelum mengangkat suatu isu
+-Membuat laporan, informasi, dan konsultasi dengan atasan mengenai aktifitas
+-Mendapat informasi dan bekerjasama dengan atasan atau departemen lain yang terkait
+7.Memiliki kesempatan untuk bertukar informasi dengan Tim QC-circle lainnya.
+
+Kandidat yang Cocok menjadi QCC Leader:
+Memiliki motivasi yang tinggi.
+Memiliki pengalaman dan kemampuan teknis terhadap aktifitas yang dilakukan dalam QC-Circle.
+Memiliki kemampuan Coaching  kepada anggota tim.  
+Dapat memberikan masukan terhadap masalah.
+Memiliki Empati.
+
+Kepemimpinan sebagai QCC Leader adalah:
+Berorientasi terhadap Target
+Memiliki kemampuan eksekusi
+Dipercaya oleh semua anggota
+Memotivasi anggota Tim untuk bekerja sukarela 
+Menggali seluruh potensi dan kemampuan anggota
+
+QCC Leader seharusnya:
+Bekerja dengan sepenuh hati secara sukarela.
+Selalu melihat dari sudut pandang orang lain dan berdiskusi.
+Melakukan tindakan dengan berani tanpa rasa takut.
+Mengerti sepenuhnya dan menggali keuntungan personal dan keahlian dari anggota.
+Mempertimbangan hubungan sesama manusia.
+Responsif terhadap permintaan yang diterima.
+Sportif, adil dan meng-evaluasi secara objectif.
+Membuat objectif QC-Circle secara jelas dan menjalankan sesuai rencana.
+Selalu belajar dan selalu mencoba untuk mengembangkan diri.
+Membuat laporan, informasi dan melakukan konsultasi dengan fasilitator atau atasan
+
+
+
+
+
+
+
+Sejarah Lahirnya QC-Circle
+Diketahui bahwa design kualitas yang bagus atau standard kerja yang bagus tidak selalu menghasilkan produk yang memiliki kualitas bagus juga.
+Ternyata, pekerja yang berhadapan langsung dengan di mana produk itu dihasilkan memiliki peranan penting terhadap kualitas produk itu sendiri.
+
+Sejarah QCC (Quality Control Circle / Gugus Kendali Mutu) dimulai di Jepang pada tahun 1960-an sebagai respons terhadap persaingan industri, dipelopori oleh raksasa seperti Toyota untuk meningkatkan kualitas dan efisiensi melalui partisipasi karyawan dalam pemecahan masalah, berkembang menjadi filosofi pengembangan SDM yang mengintegrasikan peningkatan berkelanjutan, teknik pemecahan masalah (seperti Diagram Ishikawa dan Control Chart), serta penerapan global meskipun menghadapi tantangan di beberapa negara seperti AS, menjadikannya metode penting untuk pengembangan budaya mutu di berbagai sektor. 
+Asal-Usul dan Perkembangan Awal
+Jepang (1960-an): Konsep QCC lahir di sektor manufaktur Jepang untuk mengatasi tantangan persaingan global.
+Peran Industri: Perusahaan-perusahaan Jepang, termasuk Toyota, mengadopsi QCC sebagai strategi untuk meningkatkan mutu produk dan efisiensi produksi.
+Tokoh Penting: Kaoru Ishikawa, seorang ahli pengendalian mutu, berperan besar dalam mempopulerkan QCC di Jepang.
+Filosofi Dasar: Berakar pada filosofi people-building (pembangunan manusia), menekankan pemberdayaan pekerja pelaksana dalam menyelesaikan masalah pekerjaan mereka sendiri.
+
+Konsep QC-Circle (Quality Control Circle) atau Gugus Kendali Mutu (GKM) dikembangkan di Jepang, terutama didorong oleh pengaruh para ahli manajemen kualitas Amerika, W. Edwards Deming dan Joseph M. Juran, yang memberikan ceramah di sana pada awal 1950-an. 
+Penggagas Utama: Profesor Kaoru Ishikawa dari Universitas Tokyo secara luas diakui sebagai "Bapak QC Circle Jepang". Ia mengadvokasikan pembentukan kelompok kerja lini depan untuk menerapkan pengendalian mutu total.
+Tahun Berdiri: Aktivitas QC-Circle secara resmi dimulai pada bulan April 1962 di Jepang. Union of Japanese Scientists and Engineers (JUSE) mendirikan Markas Besar Lingkaran QC untuk mensistematisasikan dan mempromosikan kegiatan ini.
+Publikasi: Majalah bulanan Genba to QC (Tempat Kerja dan QC) diluncurkan untuk memfasilitasi pendidikan dan pelatihan teknik QC bagi mandor dan pekerja lini depan, yang menjadi katalisator penyebaran gerakan ini.
+Konferensi Pertama: Konferensi QC-Circle pertama diadakan pada Mei 1963, menandai pengakuan formal dan antusiasme terhadap konsep ini di seluruh Jepang. 
+Perkembangan
+QC-Circle berkembang dalam beberapa fase:
+Penyebaran di Jepang (1960-an - 1970-an): Gerakan ini menyebar dengan cepat di seluruh industri, dari manufaktur hingga jasa. Puluhan ribu lingkaran QC terdaftar di JUSE, melibatkan jutaan pekerja Jepang. Tujuannya adalah memberdayakan karyawan, meningkatkan kualitas produk dan proses, serta meningkatkan moral kerja.
+Ekspansi Global (1970-an - 1980-an): Konsep ini menarik perhatian internasional. Lockheed Missiles and Space Company memperkenalkan QC-Circle di Amerika Serikat pada tahun 1974. Pada tahun 1977, International Association of Quality Circles (IAQC) dibentuk untuk memfasilitasi penyebaran gerakan ini di AS dan negara-negara lain. Banyak perusahaan di Eropa dan AS mengadopsi metode ini.
+Adaptasi dan Evolusi (1990-an - Sekarang): Popularitas QC-Circle mencapai puncaknya pada tahun 1980-an. Meskipun istilah "QC-Circle" mungkin kurang umum digunakan saat ini, prinsip-prinsip dasarnya tetap hidup dan berevolusi menjadi metodologi perbaikan berkelanjutan lainnya, seperti kelompok Kaizen, Six Sigma, dan inisiatif keterlibatan karyawan serupa. Fokusnya tetap pada pemberdayaan karyawan lini depan untuk mengidentifikasi, menganalisis, dan menyelesaikan masalah terkait pekerjaan guna meningkatkan kinerja organisasi secara keseluruhan. 
+Saat ini, kegiatan QC-Circle atau Gugus Kendali Mutu tetap menjadi platform strategis di banyak perusahaan untuk mempromosikan efisiensi, inovasi, dan perbaikan berkelanjutan.
+
+Esensi QC-Circle
+A.	Berawal dari area kerja yang sama (the same workshop)
+QCC adalah kelompok kecil yang terdiri atas pekerja yang melakukan pekerjaan yang sama dan berada di area kerja yang sama dalam sebuah perusahaan. 
+B.	Aktivitas pengendalian mutu (Quality Control Activities)
+-	Berpikir dan bertindak berdasarkan FAKTA
+-	Mengacu pada siklus pengendalian (spiral through control cycle)
+-	Berpandangan “Proses selanjutnya adalah pelanggan kita” 
+-	Fokus terhadap hal-hal penting
+-	Menginvestigasi penyebab utama dan bertindak mencegah ke-berulangan
+-	Berpandangan terhadap proses
+C.	Aktivitas sukarela (Voluntary Activities)
+Berpartisipasi dan berkontribusi dalam aktivitas
+Berawal dari keinginan sendiri, tanpa paksaan
+Evaluasi dilakukan sendiri (self-evaluation) 
+
+Objektif QC-Circle
+Komunikasi dua arah (mutual communication)
+Meningkatkan moral karyawan (moral up)
+Berawal dari karyawan (bottom up)
+Meningkatkan keahlian (skill up)
+Tantangan (challenge)
+Meningkatkan kesadaran (awareness)
+
+Secara umum dapat disimpulkan sebagai berikut …
+Objektif dari aktivitas QC-Circle ini adalah:
+1. Meningkatkan kapabilitas dan manggali aktualisasi diri.
+2. Membuat tempat kerja lebih menyenangkan.
+3. Meningkatkan kepuasan konsumen dan berkontribusi terhadap masyarakat.
+
+
+
+Basic QC-Circle Activity
+In Kao Indonesia
+Apakah QCC itu?
+(Quality Control Circle)
+Pengertian Aktivitas QC-Circle
+“Kelompok kecil yang terdiri dari 4-10 karyawan dalam unit kerja yang sama dan dengan sukarela (voluntarily) dan berkesinambungan melakukan kontrol dan perbaikan terhadap Kualitas dari pekerjaan, produk atau jasa yang dihasilkan”.
+Kelompok ini bekerja secara:
+ Mandiri
+ Menggunakan konsep dan teknik Quality Control  dan 
+  improvement tools lainnya
+ Kreatif
+ Mengembangkan kemampuan diri dan kerja sama tim.
