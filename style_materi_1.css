@@ -206,7 +206,7 @@ li {
 }
 /* Styling Tombol Menu */
 .navigation-menu {
-    text-align: center;
+    text-align: left;
     margin: 20px 0;
     position: relative;
 }
@@ -214,7 +214,7 @@ li {
 .menu-button {
     background-color: #004d40; /* Warna hijau gelap khas industri */
     color: white;
-    padding: 12px 24px;
+    padding: 8px 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -231,7 +231,7 @@ li {
 .floating-container {
     display: none; /* Tersembunyi secara default */
     position: absolute;
-    left: 50%;
+    left: 20%;
     transform: translateX(-50%);
     top: 50px;
     background-color: white;

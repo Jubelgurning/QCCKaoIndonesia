@@ -1,0 +1,174 @@
+/* --- Pengaturan Dasar --- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+    font-size: 16px;
+}
+
+/* --- Header --- */
+.main-header {
+    background-color: rgb(0, 172, 143);
+    color: white;
+    padding: 15px 20px;
+}
+
+.main-header h1 {
+    font-size: 10px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.sub-header {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+/* --- Konten & Section --- */
+.content {
+    max-width: 900px;
+    margin: auto;
+    padding: 15px;
+    background: white;
+}
+
+.materi-section {
+    margin-top: 15px; /* Jarak antar section pendek */
+    padding: 15px;
+    border-top: 4px solid #00ac8f;
+    background-color: #fdfdfd;
+}
+
+.konsep-item {
+    margin-bottom: 15px;
+}
+
+.sub-title {
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.border-title {
+    color: black;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+/* --- Box & Utilities --- */
+.green-box {
+    background-color: #DFF6DD;
+    border: 1px solid #9AC89A;
+    padding: 12px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.highlight-box {
+    background-color: #e7f3ff;
+    padding: 12px;
+    border-left: 5px solid #0056b3;
+    margin: 10px 0;
+}
+
+.analysis-flow {
+    background-color: white;
+    padding: 15px;
+    border-left: 5px solid black;
+    margin: 10px 0;
+}
+
+/* --- Tabel --- */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.gen-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    font-size: 0.9em;
+}
+
+.gen-table td, .gen-table th {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.gen-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-align: center;
+    font-weight: bold;
+}
+
+/* --- Gambar --- */
+.img-large {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.img-small {
+    width: 250px;
+    height: auto;
+}
+
+.img-center {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* --- Navigasi --- */
+.navigation {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn-top-circle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #0056b3;
+    color: white;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50%;
+    z-index: 1000;
+}
