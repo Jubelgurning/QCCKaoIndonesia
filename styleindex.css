@@ -3,71 +3,78 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: #ffffff; /* Latar belakang putih polos agar bersih */
+    background-color: #ffffff;
     color: #333;
+    min-height: 100vh; /* Agar tinggi halaman minimal seukuran layar */
 }
 
-/* Header Hijau */
+/* Header */
 .main-header {
-    background-color: rgb(0, 172, 143); /* Hijau sesuai gambar */
-    color: white;
-    padding: 10px 10%;
-    border-bottom: 5px solid #00acc1;
+    background-color: whitesmoke; 
+    color: rgb(0, 172, 143);
+    padding: 15px 10%;
+    border-bottom: 5px solid #000;
     text-align: center;
 }
 
 .company-name {
-    font-size: 1.1em;
+    font-size: 10px;
     margin: 0;
-    opacity: 0.9;
-    text-align: left;
+    opacity: 0.8;
+    text-align: center; /* Dibuat center agar simetris dengan judul */
+    color: RGBA( 169, 169, 169, 1 );
+    font-weight: normal;
+    text-transform: uppercase;
 }
 
 .sub-header {
-    font-size: 3em;
-    margin: 15px 0 0 0;
+    font-size: 40px;
+    margin: 10px 0;
     font-weight: bold;
 }
 
-/* Area Konten Tanpa Container */
+/* Konten Area */
 .content-area {
-    padding: 20px 10%; /* Memberikan jarak samping agar teks tidak nempel layar */
+    padding: 30px 10%;
 }
 
-/* Judul Seksi */
 .section-title {
     font-size: 1.8em;
     color: #0056b3;
-   
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-left: 5px solid rgb(0, 172, 143);
     padding-left: 15px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
-/* Teks Sasaran */
+/* RUMUS UNTUK MEMPERBESAR TULISAN SASARAN */
 .text-large {
-    font-size: 1.5em;
+    font-size: 26px; /* Ukuran diperbesar sesuai permintaan */
     line-height: 1.6;
     color: #444;
     font-style: italic;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #fcfcfc;
+    border-radius: 10px;
 }
 
 /* List Materi */
 .materi-list {
+    list-style-type: disc;
     padding-left: 25px;
 }
 
 .materi-list li {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    font-weight: normal;
+    font-size: 1.4em;
+    margin-bottom: 18px;
 }
 
 .materi-list li a {
     color: #008b8b;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .materi-list li a:hover {
@@ -75,7 +82,7 @@ body {
     padding-left: 10px;
 }
 
-/* Tombol Gallery */
+/* Tombol Floating Gallery */
 .gallery-nav {
     position: fixed;
     bottom: 30px;
@@ -88,9 +95,12 @@ body {
     padding: 15px 30px;
     border-radius: 10px;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: bold;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 /* Modal Styling */
@@ -110,14 +120,18 @@ body {
     border-radius: 20px; 
     text-align: center; 
     width: 450px;
+    max-width: 90%;
 }
 
 .modal-box input {
     width: 100%; 
-    padding: 15px; 
+    padding: 12px; 
     margin: 20px 0; 
-    font-size: 1.4em; 
+    font-size: 1.2em; 
     text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .modal-box button {
@@ -127,12 +141,15 @@ body {
     padding: 15px; 
     width: 100%; 
     border-radius: 10px; 
-    font-size: 1.2em;
+    font-size: 1.1em;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .btn-cancel {
+    display: block;
     color: red; 
     cursor: pointer; 
     margin-top: 20px;
+    text-decoration: underline;
 }

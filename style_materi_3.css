@@ -1,4 +1,4 @@
-/* --- Pengaturan Dasar --- */
+/* --- Pengaturan Dasar & Layout --- */
 html {
     scroll-behavior: smooth;
 }
@@ -8,50 +8,55 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f7f6;
+    background-color: white;
     color: #333;
     font-size: large;
 }
 
-/* --- Header Senada Materi 2 --- */
+/* --- Container Utama --- */
+.content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: none; /* Container visual dihilangkan sesuai permintaan sebelumnya */
+
+}
+
+/* --- Header --- */
 .main-header {
-    background-color: rgb(0, 172, 143);
-    color: white;
+    background-color:whitesmoke ;
+    color: black;
     padding: 15px 20px;
+     border-bottom: 5px solid black;
 }
 
 .main-header h1 {
-    font-size: 14px;
-    text-align: left;
+    font-size: 10px; /* Ukuran kecil sesuai kode asli Anda */
+    text-align: center;
     margin: 0;
     font-weight: bold;
-    font-size: 10px;
 }
 
 .sub-header {
     display: block;
-    font-size: 20px;
     text-align: center;
     font-weight: bold;
     margin-top: 15px;
-    text-transform: uppercase;
     font-size: 30px;
+    color: rgb(0, 172, 143);
 }
 
-/* --- Konten --- */
-.content {
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
-}
-
+/* --- Seksi Materi --- */
 .materi-section {
     margin-top: 30px;
-    padding: 20px;
+    padding: 10px;
     border-top: 4px solid #00ac8f;
     background-color: #fdfdfd;
+}
+
+.intro {
+    max-width: 100% !important;
 }
 
 .step-number {
@@ -62,7 +67,16 @@ body {
     margin-right: 10px;
 }
 
-/* --- Gambar --- */
+/* --- Media (Gambar) --- */
+.intro-image {
+    width: 200px;
+    height: auto;
+    display: block;       /* Wajib ada agar margin auto bekerja */
+    margin-left: auto;    /* Mendorong gambar ke tengah dari kiri */
+    margin-right: auto;   /* Mendorong gambar ke tengah dari kanan */
+    margin-bottom: 15px;  /* Jarak ke tulisan di bawahnya */
+}
+
 .img-large {
     width: 100%;
     max-width: 750px;
@@ -78,7 +92,7 @@ body {
     transform: scale(1.02);
 }
 
-/* --- Tabel --- */
+/* --- Tabel & Box Informasi --- */
 .qcc-table {
     width: 100%;
     border-collapse: collapse;
@@ -97,7 +111,6 @@ body {
     text-align: center;
 }
 
-/* --- Box Variasi --- */
 .highlight-box {
     background-color: #e8f6f3;
     border-left: 5px solid #00ac8f;
@@ -114,61 +127,22 @@ body {
 }
 
 .eng-text { font-style: italic; color: #555; margin-bottom: 2px; }
-.idn-text { color: #0033cc; font-weight: bold; margin-top: 0; }
+.idn-text { color: #0033cc; font-weight: normal; margin-top: 0;font-style: italic; }
 
 .gap-box {
     text-align: center;
-    padding: 20px;
+    padding: 5px;
     background: #f1f8e9;
     border: 2px dashed #00ac8f;
+    margin: 10px 0;
 }
 
-/* --- Prosedur & Timeline (Flexbox) --- */
-.flex-container {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 20px;
+.gap-box p {
+    margin: 5px 0;        /* Ini yang paling penting: mengecilkan jarak antar baris teks */
+    line-height: 1.2;     /* Merapatkan spasi baris teks */
 }
 
-.steps-flow {
-    flex: 2;
-    min-width: 300px;
-    background: #fff9c4;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.step-box {
-    background: white;
-    border: 1px solid #ffa000;
-    padding: 10px;
-    text-align: center;
-    border-radius: 4px;
-}
-
-.arrow { text-align: center; color: #ff5252; font-weight: bold; }
-
-.timeline-box {
-    flex: 1;
-    min-width: 250px;
-    background: #e1f5fe;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.badge {
-    background: #2979ff;
-    color: white;
-    padding: 5px;
-    border-radius: 4px;
-    font-size: 14px;
-}
-
-.arrow-small { font-size: 20px; margin: 5px 0; color: #2979ff; }
-
-/* --- Tombol Floating --- */
+/* --- Navigasi & Tombol --- */
 .btn-top-circle {
     position: fixed;
     bottom: 30px;
@@ -187,10 +161,6 @@ body {
     z-index: 1000;
 }
 
-.btn-top-circle:hover {
-    background-color: #00796b;
-}
-
 .back-button {
     display: inline-block;
     padding: 5px 15px;
@@ -200,3 +170,71 @@ body {
     border-radius: 5px;
     font-size: 15px;
 }
+
+.points-container-red {
+    background-color: #fff5f5; /* Merah muda lembut */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.points-title {
+    color: #b91c1c; /* Judul merah gelap */
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 2px solid #ff4d4d;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.points-list {
+    column-count: 2;
+    column-gap: 40px;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Teks isi tetap gelap agar mudah dibaca */
+}
+
+.points-list li {
+    break-inside: avoid;
+    padding: 2px 0;
+    border-bottom: 1px solid #ffcccc;
+    font-weight: 500;
+}
+
+/* Responsif: Jika layar sempit (HP), jadi 1 kolom */
+@media (max-width: 600px) {
+    .points-list {
+        column-count: 1;
+    }
+}
+
+/* Styling untuk container hijau */
+.container-kesimpulan {
+    background-color: #e8f5e9; /* Hijau muda */
+    padding: 20px;
+    padding-bottom: 0%;
+    padding-top: 0%;
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #1b5e20;             /* Warna teks hijau gelap */
+    line-height: 1.6;           /* Jarak antar baris agar nyaman dibaca */
+    max-width: 800px;           /* Membatasi lebar kotak */
+    margin: 10px auto;          /* Menaruh kotak di tengah halaman */
+}
+
+.container-kesimpulan strong {
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+.container-kesimpulan p {
+    margin-top: 5px; /* Memberikan jarak kecil saja (misal 5px) agar tidak terlalu menempel */
+    line-height: 1.5;
+}
+

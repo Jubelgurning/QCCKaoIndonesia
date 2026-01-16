@@ -10,20 +10,23 @@ body {
     padding: 0;
     color: #333;
     font-size: large; /* Sudah ditambah titik koma */
+    
 }
 
 /* --- Header --- */
 .main-header {
-    background-color: rgb(0, 172, 143);
-    color: white;
+    background-color: whitesmoke;
+    color: rgb(0, 172, 143);
     padding: 15px 20px;
+    border-bottom: 5px solid black;
 }
 
 .main-header h1 {
-    font-size: 14px;
-    text-align: left;
+    font-size: 10px;
+    text-align: center;
     margin: 0;
     font-weight: normal;
+    color: black;
 }
 
 .sub-header {
@@ -100,9 +103,10 @@ body {
 .btn-link {
     display: inline-block;
     margin: 10px 0;
-    color: #00796b;
+    color: RGBA( 0, 0, 255, 1 );
     text-decoration: underline;
-    font-weight: bold;
+    font-weight: normal;
+    font-size: 15px;
 }
 
 .back-button {
@@ -118,4 +122,4 @@ body {
 /* --- Floating Top Button --- */
 .fixed-top-container {
     position: fixed; 
-    bottom
+    bottom:auto}
